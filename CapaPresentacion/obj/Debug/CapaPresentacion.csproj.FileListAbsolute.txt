@@ -9,3 +9,13 @@ C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.cspro
 C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.Login.resources
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\bin\Debug\CapaEntidades.dll
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\bin\Debug\CapaNegocios.dll
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\bin\Debug\CapaEntidades.pdb
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\bin\Debug\CapaNegocios.pdb
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.HomeAdministrador.resources
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsEstudiante.HomeEstudiante.resources
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsGestor.HomeGestor.resources

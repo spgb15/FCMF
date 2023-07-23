@@ -1,4 +1,9 @@
-﻿using System;
+﻿using CapaEntidades;
+using CapaNegocios;
+using CapaPresentacion.ViewsAdministrador;
+using CapaPresentacion.ViewsEstudiante;
+using CapaPresentacion.ViewsGestor;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +18,8 @@ namespace CapaPresentacion
 {
     public partial class Login : Form
     {
+        LoginNegocio neg = new LoginNegocio();
+
         public Login()
         {
             InitializeComponent();
@@ -24,13 +31,34 @@ namespace CapaPresentacion
             this.MinimizeBox = false;
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private Form AbriForm(int perfil)
+        {
+            switch (perfil)
+            {
+                case 1:
+                    return new HomeAdministrador();
+
+                case 2:
+                    return new HomeGestor();
+
+                case 3:
+                    return new HomeEstudiante();
+
+                default:
+                    throw new ArgumentException("Perfil no válido");
+            }
+        }
+
+            private void btnLogin_Click(object sender, EventArgs e)
         {
             if (txtUser.Text != "" || txtPassword.Text != "")
             {
-                if (!true)
+                Usuario usuario = neg.Login(txtUser.Text, txtPassword.Text);
+                if (usuario != null)
                 {
-
+                    int perfil = usuario.Id_Perfil;
+                    AbriForm(perfil).Show();
+                    this.Hide();
                 }
                 else
                 {
