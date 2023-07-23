@@ -1,0 +1,11 @@
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\VILLAMAR\Desktop\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.Login.resources
