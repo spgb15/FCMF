@@ -20,13 +20,24 @@ namespace CapaPresentacion
 
         private void Login_Load(object sender, EventArgs e)
         {
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (txtUser.Text != "" || txtPassword.Text != "")
             {
+                if (!true)
+                {
 
+                }
+                else
+                {
+                    txtUser.Clear();
+                    txtPassword.Clear();    
+                    MessageBox.Show("Usuario no exíste", "Intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
