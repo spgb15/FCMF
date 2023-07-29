@@ -63,9 +63,39 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BRD_Foto_MissFCMF {
+            get {
+                object obj = ResourceManager.GetObject("BRD_Foto_MissFCMF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BRD_Foto_MissFotogenia {
+            get {
+                object obj = ResourceManager.GetObject("BRD_Foto_MissFotogenia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Login_Fondo {
             get {
                 object obj = ResourceManager.GetObject("Login-Fondo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Miss_Fotogenia {
+            get {
+                object obj = ResourceManager.GetObject("Miss_Fotogenia", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

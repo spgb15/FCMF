@@ -21,5 +21,26 @@ namespace CapaPresentacion.ViewsEstudiante
         {
             Application.Exit();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Paint(object sender, PaintEventArgs e)
+        {
+            // Crear un objeto Pen con el color y el grosor que desees para el borde
+            Pen borderPen = new Pen(Color.Red, 4);
+
+            // Obtener el tamaño del PictureBox
+            int width = pictureBox1.Width;
+            int height = pictureBox1.Height;
+
+            // Dibujar el borde alrededor del PictureBox
+            e.Graphics.DrawRectangle(borderPen, 0, 0, width - 1, height - 1);
+        }
+
+
     }
-}
+    }
+
