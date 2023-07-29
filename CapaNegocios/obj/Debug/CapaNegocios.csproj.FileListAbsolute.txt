@@ -9,3 +9,14 @@ C:\Users\VILLAMAR\Desktop\FCMF\CapaNegocios\obj\Debug\CapaNegocios.csproj.CoreCo
 C:\Users\VILLAMAR\Desktop\FCMF\CapaNegocios\obj\Debug\CapaNegocios.csproj.CopyComplete
 C:\Users\VILLAMAR\Desktop\FCMF\CapaNegocios\obj\Debug\CapaNegocios.dll
 C:\Users\VILLAMAR\Desktop\FCMF\CapaNegocios\obj\Debug\CapaNegocios.pdb
+C:\Users\spaul\Documents\GitHub\FCMF\CapaNegocios\bin\Debug\CapaNegocios.dll
+C:\Users\spaul\Documents\GitHub\FCMF\CapaNegocios\bin\Debug\CapaNegocios.pdb
+C:\Users\spaul\Documents\GitHub\FCMF\CapaNegocios\bin\Debug\CapaDatos.dll
+C:\Users\spaul\Documents\GitHub\FCMF\CapaNegocios\bin\Debug\CapaEntidades.dll
+C:\Users\spaul\Documents\GitHub\FCMF\CapaNegocios\bin\Debug\CapaDatos.pdb
+C:\Users\spaul\Documents\GitHub\FCMF\CapaNegocios\bin\Debug\CapaEntidades.pdb
+C:\Users\spaul\Documents\GitHub\FCMF\CapaNegocios\obj\Debug\CapaNegocios.csproj.AssemblyReference.cache
+C:\Users\spaul\Documents\GitHub\FCMF\CapaNegocios\obj\Debug\CapaNegocios.csproj.CoreCompileInputs.cache
+C:\Users\spaul\Documents\GitHub\FCMF\CapaNegocios\obj\Debug\CapaNegocios.csproj.CopyComplete
+C:\Users\spaul\Documents\GitHub\FCMF\CapaNegocios\obj\Debug\CapaNegocios.dll
+C:\Users\spaul\Documents\GitHub\FCMF\CapaNegocios\obj\Debug\CapaNegocios.pdb
