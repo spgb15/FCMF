@@ -15,6 +15,8 @@ namespace CapaPresentacion.ViewsEstudiante
         public HomeEstudiante()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void HomeEstudiante_FormClosing(object sender, FormClosingEventArgs e)
@@ -38,9 +40,24 @@ namespace CapaPresentacion.ViewsEstudiante
 
             // Dibujar el borde alrededor del PictureBox
             e.Graphics.DrawRectangle(borderPen, 0, 0, width - 1, height - 1);
+        } 
+
+        private Form formularioCandidata()
+        {
+            return new FormEstudianteVisitaCandidatas();
         }
 
+        private void btn_MissFotogenica_Click(object sender, EventArgs e)
+        {
+            formularioCandidata().Show();
+            this.Hide();
+        }
 
+        private void btn_Miss_Click(object sender, EventArgs e)
+        {
+            formularioCandidata().Show();
+            this.Hide(); 
+        }
     }
     }
 

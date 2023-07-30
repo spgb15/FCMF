@@ -59,6 +59,7 @@ namespace CapaPresentacion.ViewsEstudiante
             this.btn_MissFotogenica.TabIndex = 1;
             this.btn_MissFotogenica.Text = "Miss Fotogenia";
             this.btn_MissFotogenica.UseVisualStyleBackColor = false;
+            this.btn_MissFotogenica.Click += new System.EventHandler(this.btn_MissFotogenica_Click);
             // 
             // btn_Miss
             // 
@@ -75,6 +76,7 @@ namespace CapaPresentacion.ViewsEstudiante
             this.btn_Miss.TabIndex = 4;
             this.btn_Miss.Text = "Miss FCMF";
             this.btn_Miss.UseVisualStyleBackColor = true;
+            this.btn_Miss.Click += new System.EventHandler(this.btn_Miss_Click);
             // 
             // pictureBox2
             // 

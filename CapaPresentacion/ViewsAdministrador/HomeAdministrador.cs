@@ -15,6 +15,8 @@ namespace CapaPresentacion.ViewsAdministrador
         public HomeAdministrador()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void HomeAdministrador_FormClosing(object sender, FormClosingEventArgs e)
