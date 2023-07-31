@@ -63,12 +63,18 @@ CREATE TABLE comentarios(
 	fechaReg			DATE			NOT NULL		DEFAULT		CAST(GETDATE() AS DATE),
 	FOREIGN KEY (id_foto) REFERENCES fotos(id_foto),
 	FOREIGN KEY (id_estudiante) REFERENCES usuario(id_usuario)
-)
+
+);
+
+CREATE TABLE reinado(
+	id_reinado			INT				PRIMARY KEY		NOT NULL
+);
 
 CREATE TABLE candidata(
 	id_candita			INT				PRIMARY KEY		IDENTITY(1,1),
 	id_datosPersonales	INT				NOT NULL,
 	id_album			INT				NOT NULL,
+	id_reinado			INT				NOT NULL,
 	pasatiempos			VARCHAR(500)	NOT NULL,
 	habilidades			VARCHAR(500)	NOT NULL,
 	intereses			VARCHAR(500)	NOT NULL,
@@ -76,7 +82,8 @@ CREATE TABLE candidata(
 	estado				CHAR			NOT NULL		DEFAULT		'A',
 	fechaReg			DATE			NOT NULL		DEFAULT		CAST(GETDATE() AS DATE),
 	FOREIGN KEY (id_datosPersonales) REFERENCES datosPersonales(id_datosPersonales),
-	FOREIGN KEY (id_album) REFERENCES album(id_album)
+	FOREIGN KEY (id_album) REFERENCES album(id_album),
+	FOREIGN KEY (id_reinado) REFERENCES Reinado(id_reinado)
 )
 
 CREATE TABLE votacionFotogenia(
@@ -98,3 +105,5 @@ CREATE TABLE votacionReina(
 	FOREIGN KEY (id_candita) REFERENCES candidata(id_candita),
 	FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
 )
+
+
