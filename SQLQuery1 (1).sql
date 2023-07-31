@@ -26,6 +26,7 @@ CREATE TABLE usuario(
 
 CREATE TABLE datosPersonales(
 	id_datosPersonales	INT				PRIMARY KEY		IDENTITY(1,1),
+	id_Reinado			INT				NOT NULL,
 	nombres				VARCHAR(255)	NOT NULL,
 	fechaNac			DATE			NOT NULL,
 	direccion			VARCHAR(500)	NOT NULL,
@@ -63,12 +64,17 @@ CREATE TABLE comentarios(
 	fechaReg			DATE			NOT NULL		DEFAULT		CAST(GETDATE() AS DATE),
 	FOREIGN KEY (id_foto) REFERENCES fotos(id_foto),
 	FOREIGN KEY (id_estudiante) REFERENCES usuario(id_usuario)
-)
+);
+
+CREATE TABLE REINADO(
+	id_Reinado			INT				PRIMARY KEY		NOT NULL,
+);
 
 CREATE TABLE candidata(
 	id_candita			INT				PRIMARY KEY		IDENTITY(1,1),
 	id_datosPersonales	INT				NOT NULL,
 	id_album			INT				NOT NULL,
+	id_Reinado			INT				NOT NULL,
 	pasatiempos			VARCHAR(500)	NOT NULL,
 	habilidades			VARCHAR(500)	NOT NULL,
 	intereses			VARCHAR(500)	NOT NULL,
@@ -76,8 +82,11 @@ CREATE TABLE candidata(
 	estado				CHAR			NOT NULL		DEFAULT		'A',
 	fechaReg			DATE			NOT NULL		DEFAULT		CAST(GETDATE() AS DATE),
 	FOREIGN KEY (id_datosPersonales) REFERENCES datosPersonales(id_datosPersonales),
-	FOREIGN KEY (id_album) REFERENCES album(id_album)
-)
+	FOREIGN KEY (id_album) REFERENCES album(id_album),
+	FOREIGN KEY (id_Reinado) REFERENCES reinado(id_Reinado)
+);
+
+
 
 CREATE TABLE votacionFotogenia(
 	id_fotogenia		INT				PRIMARY KEY		IDENTITY(1,1),
@@ -98,3 +107,5 @@ CREATE TABLE votacionReina(
 	FOREIGN KEY (id_candita) REFERENCES candidata(id_candita),
 	FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
 )
+
+SELECT * FROM candidata;
