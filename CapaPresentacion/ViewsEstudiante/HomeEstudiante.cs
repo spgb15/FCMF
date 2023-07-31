@@ -35,8 +35,8 @@ namespace CapaPresentacion.ViewsEstudiante
             Pen borderPen = new Pen(Color.Red, 4);
 
             // Obtener el tamaño del PictureBox
-            int width = fondo.Width;
-            int height = fondo.Height;
+            int width = pictureBox1.Width;
+            int height = pictureBox1.Height;
 
             // Dibujar el borde alrededor del PictureBox
             e.Graphics.DrawRectangle(borderPen, 0, 0, width - 1, height - 1);
@@ -57,16 +57,6 @@ namespace CapaPresentacion.ViewsEstudiante
         {
             formularioCandidata().Show();
             this.Hide(); 
-        }
-
-        private void HomeEstudiante_Load(object sender, EventArgs e)
-        {
-            titulo_1.Parent = this.fondo;
-            Subtitulo.Parent = this.fondo;
-            titulo_1.BackColor = Color.Transparent;
-            Subtitulo.BackColor = Color.Transparent;
-            this.fondo.BackColor = Color.Transparent;
-
         }
     }
     }

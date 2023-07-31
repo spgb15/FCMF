@@ -35,12 +35,12 @@ namespace CapaPresentacion.ViewsEstudiante
             this.btn_Miss = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.fondo = new System.Windows.Forms.PictureBox();
-            this.Subtitulo = new System.Windows.Forms.Label();
-            this.titulo_1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fondo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_MissFotogenica
@@ -101,43 +101,39 @@ namespace CapaPresentacion.ViewsEstudiante
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
             // 
-            // fondo
+            // pictureBox1
             // 
-            this.fondo.BackColor = System.Drawing.Color.Transparent;
-            this.fondo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fondo.Image = global::CapaPresentacion.Properties.Resources.Login_Fondo;
-            this.fondo.Location = new System.Drawing.Point(0, 0);
-            this.fondo.Name = "fondo";
-            this.fondo.Size = new System.Drawing.Size(800, 450);
-            this.fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fondo.TabIndex = 0;
-            this.fondo.TabStop = false;
-            this.fondo.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.Login_Fondo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Subtitulo
+            // label2
             // 
-            this.Subtitulo.AutoSize = true;
-            this.Subtitulo.BackColor = this.BackColor;
-            this.Subtitulo.Font = new System.Drawing.Font("Sitka Small", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Subtitulo.ForeColor = System.Drawing.Color.Black;
-            this.Subtitulo.Location = new System.Drawing.Point(201, 397);
-            this.Subtitulo.Name = "Subtitulo";
-            this.Subtitulo.Size = new System.Drawing.Size(458, 31);
-            this.Subtitulo.TabIndex = 7;
-            this.Subtitulo.Text = "Elige el reinado por el que quieres votar\r\n";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = this.BackColor;
+            this.label2.Font = new System.Drawing.Font("Sitka Small", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(245, 402);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(304, 20);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Elige el reinado por el que quieres votar\r\n";
             // 
-            // titulo_1
+            // label1
             // 
-            this.titulo_1.AutoSize = true;
-            this.titulo_1.BackColor = this.BackColor;
-            this.titulo_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.titulo_1.Font = new System.Drawing.Font("Sitka Small", 10F, System.Drawing.FontStyle.Bold);
-            this.titulo_1.ForeColor = System.Drawing.Color.White;
-            this.titulo_1.Location = new System.Drawing.Point(23, 20);
-            this.titulo_1.Name = "titulo_1";
-            this.titulo_1.Size = new System.Drawing.Size(740, 20);
-            this.titulo_1.TabIndex = 6;
-            this.titulo_1.Text = "Bienvenidos a la elección de Reina de la Facultad de Ciencias Matemáticas y Físicas" +
+            this.label1.AutoSize = true;
+            this.label1.BackColor = this.BackColor;
+            this.label1.Font = new System.Drawing.Font("Sitka Small", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(23, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(740, 20);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Bienvenidos a la elección de Reina del Facultad de Ciencias Matemáticas y Físicas" +
     " y Miss Fotogenia\r\n";
             // 
             // HomeEstudiante
@@ -145,21 +141,20 @@ namespace CapaPresentacion.ViewsEstudiante
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Subtitulo);
-            this.Controls.Add(this.titulo_1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btn_Miss);
             this.Controls.Add(this.btn_MissFotogenica);
-            this.Controls.Add(this.fondo);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "HomeEstudiante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomeEstudiante";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HomeEstudiante_FormClosing);
-            this.Load += new System.EventHandler(this.HomeEstudiante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fondo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,12 +162,12 @@ namespace CapaPresentacion.ViewsEstudiante
 
         #endregion
 
-        private System.Windows.Forms.PictureBox fondo;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_MissFotogenica;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btn_Miss;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label Subtitulo;
-        private System.Windows.Forms.Label titulo_1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
