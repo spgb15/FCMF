@@ -63,6 +63,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap account_info_or_profile_card_with_personal_data_icon_vector {
+            get {
+                object obj = ResourceManager.GetObject("account-info-or-profile-card-with-personal-data-icon-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BRD_Foto_MissFCMF {
             get {
                 object obj = ResourceManager.GetObject("BRD_Foto_MissFCMF", resourceCulture);
@@ -83,6 +93,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap descargar {
+            get {
+                object obj = ResourceManager.GetObject("descargar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Login_Fondo {
             get {
                 object obj = ResourceManager.GetObject("Login-Fondo", resourceCulture);
@@ -96,6 +116,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap Miss_Fotogenia {
             get {
                 object obj = ResourceManager.GetObject("Miss_Fotogenia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap polaroidStyle {
+            get {
+                object obj = ResourceManager.GetObject("polaroidStyle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -72,5 +72,10 @@ namespace CapaPresentacion
                 MessageBox.Show("Hay campos vacíos", "Intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void Login_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

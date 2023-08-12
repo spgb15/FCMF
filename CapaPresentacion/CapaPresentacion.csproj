@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +55,53 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsAdministrador\FormAlbumAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsAdministrador\FormAlbumAdmin.Designer.cs">
+      <DependentUpon>FormAlbumAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsAdministrador\FormCandidataAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsAdministrador\FormCandidataAdmin.Designer.cs">
+      <DependentUpon>FormCandidataAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsAdministrador\FormComentariosAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsAdministrador\FormComentariosAdmin.Designer.cs">
+      <DependentUpon>FormComentariosAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsAdministrador\FormDatosPersonalesAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsAdministrador\FormDatosPersonalesAdmin.Designer.cs">
+      <DependentUpon>FormDatosPersonalesAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsAdministrador\FormFotoAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsAdministrador\FormFotoAdmin.Designer.cs">
+      <DependentUpon>FormFotoAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsAdministrador\FormPerfilUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsAdministrador\FormPerfilUsuario.Designer.cs">
+      <DependentUpon>FormPerfilUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsAdministrador\FormUsuarioAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsAdministrador\FormUsuarioAdmin.Designer.cs">
+      <DependentUpon>FormUsuarioAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewsAdministrador\HomeAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +126,36 @@
     <Compile Include="ViewsEstudiante\HomeEstudiante.Designer.cs">
       <DependentUpon>HomeEstudiante.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewsGestor\FormAlbumGestor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsGestor\FormAlbumGestor.Designer.cs">
+      <DependentUpon>FormAlbumGestor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsGestor\FormCandidataGestor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsGestor\FormCandidataGestor.Designer.cs">
+      <DependentUpon>FormCandidataGestor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsGestor\FormComentariosGestor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsGestor\FormComentariosGestor.Designer.cs">
+      <DependentUpon>FormComentariosGestor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsGestor\FormDatosPersonalesGestor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsGestor\FormDatosPersonalesGestor.Designer.cs">
+      <DependentUpon>FormDatosPersonalesGestor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsGestor\FormFotoGestor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewsGestor\FormFotoGestor.Designer.cs">
+      <DependentUpon>FormFotoGestor.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewsGestor\HomeGestor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,14 +167,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="ViewsAdministrador\FormAlbumAdmin.resx">
+      <DependentUpon>FormAlbumAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewsAdministrador\FormCandidataAdmin.resx">
+      <DependentUpon>FormCandidataAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewsAdministrador\FormComentariosAdmin.resx">
+      <DependentUpon>FormComentariosAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewsAdministrador\FormDatosPersonalesAdmin.resx">
+      <DependentUpon>FormDatosPersonalesAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewsAdministrador\FormFotoAdmin.resx">
+      <DependentUpon>FormFotoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewsAdministrador\FormPerfilUsuario.resx">
+      <DependentUpon>FormPerfilUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewsAdministrador\FormUsuarioAdmin.resx">
+      <DependentUpon>FormUsuarioAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewsAdministrador\HomeAdministrador.resx">
       <DependentUpon>HomeAdministrador.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +202,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewsEstudiante\HomeEstudiante.resx">
       <DependentUpon>HomeEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewsGestor\FormAlbumGestor.resx">
+      <DependentUpon>FormAlbumGestor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewsGestor\FormCandidataGestor.resx">
+      <DependentUpon>FormCandidataGestor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewsGestor\FormComentariosGestor.resx">
+      <DependentUpon>FormComentariosGestor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewsGestor\FormDatosPersonalesGestor.resx">
+      <DependentUpon>FormDatosPersonalesGestor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewsGestor\FormFotoGestor.resx">
+      <DependentUpon>FormFotoGestor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewsGestor\HomeGestor.resx">
       <DependentUpon>HomeGestor.cs</DependentUpon>
@@ -126,6 +235,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{7d22fec9-79fc-4bf2-b819-3719a842475a}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj">
       <Project>{2a50a077-1b1a-4f81-be29-5544503ec602}</Project>
       <Name>CapaEntidades</Name>
@@ -143,6 +256,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BRD_Foto_MissFCMF.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account-info-or-profile-card-with-personal-data-icon-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

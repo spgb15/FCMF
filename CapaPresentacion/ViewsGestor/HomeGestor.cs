@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaPresentacion.ViewsAdministrador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +23,36 @@ namespace CapaPresentacion.ViewsGestor
         private void HomeGestor_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnIngresarDT_Click(object sender, EventArgs e)
+        {
+            FormDatosPersonalesGestor formDatosPersonalesGestor = new FormDatosPersonalesGestor();
+            formDatosPersonalesGestor.Show();
+        }
+
+        private void btnIngresarCA_Click(object sender, EventArgs e)
+        {
+            FormCandidataGestor formCandidataGestor = new FormCandidataGestor();
+            formCandidataGestor.Show();
+        }
+
+        private void btnIngresarF_Click(object sender, EventArgs e)
+        {
+            FormFotoGestor formFotoGestor = new FormFotoGestor();
+            formFotoGestor.Show();
+        }
+
+        private void btnIngresarA_Click(object sender, EventArgs e)
+        {
+            FormAlbumGestor formAlbumGestor = new FormAlbumGestor();
+            formAlbumGestor.Show();
+        }
+
+        private void btnIngresarCO_Click(object sender, EventArgs e)
+        {
+            FormComentariosGestor formComentariosGestor = new FormComentariosGestor();
+            formComentariosGestor.Show();
         }
     }
 }
