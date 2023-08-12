@@ -22,5 +22,6 @@ namespace CapaPresentacion.ViewsEstudiante
             this.label9.Parent = this.pictureBox1;
             this.label9.BackColor = Color.Transparent;
         }
+
     }
 }
