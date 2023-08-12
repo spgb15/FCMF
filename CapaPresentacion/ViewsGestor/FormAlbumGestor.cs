@@ -21,6 +21,8 @@ namespace CapaPresentacion.ViewsGestor
         {
             InitializeComponent();
             GetComboCandidata();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
         private void GetComboCandidata()
         {

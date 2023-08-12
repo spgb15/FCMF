@@ -22,6 +22,8 @@ namespace CapaPresentacion.ViewsAdministrador
         public FormDatosPersonalesAdmin()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
 

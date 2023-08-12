@@ -18,6 +18,7 @@ namespace CapaPresentacion.ViewsGestor
             InitializeComponent();
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+
         }
 
         private void HomeGestor_FormClosing(object sender, FormClosingEventArgs e)

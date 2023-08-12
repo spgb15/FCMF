@@ -23,6 +23,8 @@ namespace CapaPresentacion.ViewsAdministrador
         {
             InitializeComponent();
             GetComboCandidata();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

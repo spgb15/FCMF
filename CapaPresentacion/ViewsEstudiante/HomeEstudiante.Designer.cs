@@ -103,6 +103,7 @@ namespace CapaPresentacion.ViewsEstudiante
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.Login_Fondo;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -135,6 +136,7 @@ namespace CapaPresentacion.ViewsEstudiante
             this.label1.TabIndex = 6;
             this.label1.Text = "Bienvenidos a la elección de Reina del Facultad de Ciencias Matemáticas y Físicas" +
     " y Miss Fotogenia\r\n";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // HomeEstudiante
             // 
@@ -152,6 +154,7 @@ namespace CapaPresentacion.ViewsEstudiante
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomeEstudiante";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HomeEstudiante_FormClosing);
+            this.Load += new System.EventHandler(this.HomeEstudiante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

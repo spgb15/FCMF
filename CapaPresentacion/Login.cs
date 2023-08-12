@@ -23,12 +23,13 @@ namespace CapaPresentacion
         public Login()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
+
         }
 
         private Form AbriForm(int perfil)

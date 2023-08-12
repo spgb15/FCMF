@@ -21,6 +21,8 @@ namespace CapaPresentacion.ViewsGestor
         public FormDatosPersonalesGestor()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
         private void CargarDatosPersonales()
         {

@@ -23,6 +23,8 @@ namespace CapaPresentacion.ViewsAdministrador
             InitializeComponent();
             GetComboAlbum();
             GetComboCandidata();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void FormFotoAdmin_Load(object sender, EventArgs e)

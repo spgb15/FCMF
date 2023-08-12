@@ -22,6 +22,8 @@ namespace CapaPresentacion.ViewsGestor
         {
             InitializeComponent();
             GetComboFoto();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void FormComentariosGestor_Load(object sender, EventArgs e)

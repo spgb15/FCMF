@@ -16,5 +16,11 @@ namespace CapaPresentacion.ViewsEstudiante
         {
             InitializeComponent();
         }
+
+        private void FormPortafolioCandidata_Load(object sender, EventArgs e)
+        {
+            this.label9.Parent = this.pictureBox1;
+            this.label9.BackColor = Color.Transparent;
+        }
     }
 }

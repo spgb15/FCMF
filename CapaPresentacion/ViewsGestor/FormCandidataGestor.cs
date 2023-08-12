@@ -23,6 +23,8 @@ namespace CapaPresentacion.ViewsGestor
             InitializeComponent();
             GetComboDatosPersonales();
             GetComboIdReinado();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
        

@@ -23,6 +23,8 @@ namespace CapaPresentacion.ViewsAdministrador
             InitializeComponent();
             GetComboDatosPersonales();
             GetComboIdReinado();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void FormCandidataAdmin_Load(object sender, EventArgs e)
@@ -54,7 +56,7 @@ namespace CapaPresentacion.ViewsAdministrador
                 string columna1 = row["id_reinado"].ToString();
                 string columna2 = row["nombreReinado"].ToString();
                 cmb_ID_RE.Items.Add(columna1);
-                cmb_ID_RE.Items.Add(columna2)
+                cmb_ID_RE.Items.Add(columna2);
                 //Console.WriteLine($"Columna1: {columna1}, Columna2: {columna2}");
             }
 

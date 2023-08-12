@@ -58,6 +58,19 @@ namespace CapaPresentacion.ViewsEstudiante
             formularioCandidata().Show();
             this.Hide(); 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HomeEstudiante_Load(object sender, EventArgs e)
+        {
+            this.label1.Parent = this.pictureBox1;
+            this.label2.Parent = this.pictureBox1;
+            this.label1.BackColor = Color.Transparent;
+            this.label2.BackColor = Color.Transparent;
+        }
     }
     }
 

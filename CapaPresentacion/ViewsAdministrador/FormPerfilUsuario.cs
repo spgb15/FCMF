@@ -23,6 +23,8 @@ namespace CapaPresentacion.ViewsAdministrador
         {
             InitializeComponent();
             GetComboModulo();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void FormPerfilUsuario_Load(object sender, EventArgs e)

@@ -23,6 +23,8 @@ namespace CapaPresentacion.ViewsGestor
             InitializeComponent();
             GetComboAlbum();
             GetComboCandidata();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void FormFotoGestor_Load(object sender, EventArgs e)

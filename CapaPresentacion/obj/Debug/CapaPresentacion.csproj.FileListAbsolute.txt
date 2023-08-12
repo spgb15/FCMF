@@ -77,3 +77,15 @@ C:\Users\wilme\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion
 C:\Users\wilme\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsGestor.FormComentariosGestor.resources
 C:\Users\wilme\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsGestor.FormDatosPersonalesGestor.resources
 C:\Users\wilme\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsGestor.FormFotoGestor.resources
+C:\Users\spaul\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormAlbumAdmin.resources
+C:\Users\spaul\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormCandidataAdmin.resources
+C:\Users\spaul\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormComentariosAdmin.resources
+C:\Users\spaul\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormDatosPersonalesAdmin.resources
+C:\Users\spaul\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormFotoAdmin.resources
+C:\Users\spaul\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormPerfilUsuario.resources
+C:\Users\spaul\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormUsuarioAdmin.resources
+C:\Users\spaul\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsGestor.FormAlbumGestor.resources
+C:\Users\spaul\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsGestor.FormCandidataGestor.resources
+C:\Users\spaul\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsGestor.FormComentariosGestor.resources
+C:\Users\spaul\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsGestor.FormDatosPersonalesGestor.resources
+C:\Users\spaul\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsGestor.FormFotoGestor.resources
