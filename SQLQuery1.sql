@@ -38,8 +38,10 @@ CREATE TABLE datosPersonales(
 )
 
 CREATE TABLE reinado(
-	id_reinado			INT				PRIMARY KEY		NOT NULL
+	id_reinado			INT				PRIMARY KEY		IDENTITY(1,1),
+	nombreReinado		VARCHAR(100)	NOT NULL
 );
+INSERT INTO reinado(nombreReinado) VALUES ('Miss Fotogenea,'),('Reina De La Facultad')
 
 CREATE TABLE candidata(
 	id_candita			INT				PRIMARY KEY		IDENTITY(1,1),
