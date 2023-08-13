@@ -322,7 +322,7 @@ DELETE votacionReina WHERE id_reina=@id_reina;
 CREATE PROCEDURE ObtenerVotacionReina
 AS
 BEGIN
-    SELECT * FROM datosPersonales; 
+    SELECT * FROM votacionReina; 
 END
 
 
