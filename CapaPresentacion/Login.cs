@@ -25,6 +25,7 @@ namespace CapaPresentacion
             InitializeComponent();
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.Text = "Login - Sistema de eleccion de reina";
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -76,7 +77,6 @@ namespace CapaPresentacion
 
         private void Login_Load_1(object sender, EventArgs e)
         {
-
         }
     }
 }

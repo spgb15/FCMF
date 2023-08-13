@@ -10,7 +10,7 @@ namespace CapaDatos
 {
     public class CD_connection
     {
-        static string server = "DESKTOP-7AKP9MA"; //Nombre del servidor de la base de datos
+        static string server = "LAPTOP-JSLER5RB"; //Nombre del servidor de la base de datos
 
         //String para hacer la conexion con la BD
         private SqlConnection conexion = new SqlConnection("Server=" + server + "; Database = DB_ReinaFacultad; Integrated Security=true");

@@ -34,3 +34,12 @@ C:\Users\ASUS\Documents\GitHub\FCMF\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCom
 C:\Users\ASUS\Documents\GitHub\FCMF\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
 C:\Users\ASUS\Documents\GitHub\FCMF\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\ASUS\Documents\GitHub\FCMF\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaDatos\bin\Debug\CapaEntidades.dll
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaDatos\bin\Debug\CapaEntidades.pdb
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaDatos\obj\Debug\CapaDatos.pdb

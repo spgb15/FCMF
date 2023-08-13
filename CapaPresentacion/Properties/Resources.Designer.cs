@@ -73,6 +73,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boton_de_flecha_derecha_del_teclado {
+            get {
+                object obj = ResourceManager.GetObject("boton-de-flecha-derecha-del-teclado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BRD_Foto_MissFCMF {
             get {
                 object obj = ResourceManager.GetObject("BRD_Foto_MissFCMF", resourceCulture);
@@ -86,16 +96,6 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap BRD_Foto_MissFotogenia {
             get {
                 object obj = ResourceManager.GetObject("BRD_Foto_MissFotogenia", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap descargar {
-            get {
-                object obj = ResourceManager.GetObject("descargar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap polaroidStyle {
+        internal static System.Drawing.Bitmap pngwing_com {
             get {
-                object obj = ResourceManager.GetObject("polaroidStyle", resourceCulture);
+                object obj = ResourceManager.GetObject("pngwing.com", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

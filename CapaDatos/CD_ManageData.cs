@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using CapaEntidades;
 
 namespace CapaDatos
 {
@@ -521,7 +522,115 @@ namespace CapaDatos
             adapter.Fill(dt);
             return dt;
         }
+        static string server = "LAPTOP-JSLER5RB"; //Nombre del servidor de la base de datos
+
+        //String para hacer la conexion con la BD
+        private string conexion = "Server=" + server + "; Database = DB_ReinaFacultad; Integrated Security=true";
+
+        public List<string> GetImagePaths(int reinado)
+        {
+            List<string> paths = new List<string>();
+
+            using (SqlConnection conn = new SqlConnection(conexion))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("select url_foto from datosPersonales WHERE ID_DATOSPERSONALES = ANY (SELECT id_datosPersonales FROM candidata WHERE id_reinado = " + reinado + " );", conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while(reader.Read())
+                {
+                    paths.Add(reader.GetString(0));
+                }
+                reader.Close();
+
+            }
+            return paths;
+        }
+
+        public List<Candidata> ObtenerCandidatas(int reinado)
+        {
+            List<Candidata> candidatas = new List<Candidata>();
+
+            using (SqlConnection conn = new SqlConnection(conexion))
+            {
+                conn.Open();
+                string query = "SELECT * FROM Candidata JOIN DatosPersonales ON Candidata.ID_DatosPersonales = DatosPersonales.id_datosPersonales WHERE id_reinado = " + reinado + " ;";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    using(SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while(reader.Read())
+                        {
+                            candidatas.Add(new Candidata
+                            {
+                                Id_candidata = Convert.ToInt32(reader["id_candita"]),
+                                Id_datosPersonales = Convert.ToInt32(reader["id_datosPersonales"]),
+                                Nombre = reader["nombres"].ToString(),
+                                Id_reinado = Convert.ToInt32(reader["ID_Reinado"]),
+                                Pasatiempo = reader["Pasatiempos"].ToString(),
+                                Habilidades = reader["Habilidades"].ToString(),
+                                Intereses = reader["Intereses"].ToString(),
+                                Aspiraciones = reader["Aspiraciones"].ToString(),
+                                Fecha_nac = reader["FechaNac"].ToString(),
+                                Direccion = reader["direccion"].ToString(),
+                                Telefono = reader["teléfono"].ToString(),
+                                Mail = reader["mail"].ToString(),
+                                Titulo = reader["Titulo"].ToString()
+                            });                    
+                        }
+                    }
+                }
+                
+            }
+            return candidatas;
+        }
+
+        public Candidata Datos(int id_candita)
+        {
+            using (SqlConnection conn = new SqlConnection(conexion))
+            {
+                conn.Open();
+                string query = "SELECT * FROM Candidata JOIN DatosPersonales ON Candidata.ID_DatosPersonales = DatosPersonales.id_datosPersonales WHERE id_candita = " + id_candita + " ;";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id_candita", id_candita);
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            Candidata candidata = new Candidata
+                            {
+                                Id_datosPersonales = Convert.ToInt32(reader["id_datosPersonales"]),
+                                Nombre = reader["nombres"].ToString(),
+                                Id_reinado = Convert.ToInt32(reader["ID_Reinado"]),
+                                Pasatiempo = reader["Pasatiempos"].ToString(),
+                                Habilidades = reader["Habilidades"].ToString(),
+                                Intereses = reader["Intereses"].ToString(),
+                                Aspiraciones = reader["Aspiraciones"].ToString(),
+                                Fecha_nac = reader["FechaNac"].ToString(),
+                                Direccion = reader["direccion"].ToString(),
+                                Telefono = reader["teléfono"].ToString(),
+                                Mail = reader["mail"].ToString(),
+                                Titulo = reader["Titulo"].ToString(),
+                                Url = reader["url_foto"].ToString()
+                            };
+                            return candidata;
+                        }
+                        else
+                        {
+                            return null;
+                        }
+                    }
+                }
+
+
+
+            }
+        }
 
     }
+
 }
+
 

@@ -17,6 +17,7 @@ namespace CapaPresentacion.ViewsEstudiante
             InitializeComponent();
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+
         }
 
         private void HomeEstudiante_FormClosing(object sender, FormClosingEventArgs e)
@@ -42,20 +43,22 @@ namespace CapaPresentacion.ViewsEstudiante
             e.Graphics.DrawRectangle(borderPen, 0, 0, width - 1, height - 1);
         } 
 
-        private Form formularioCandidata()
+        private Form formularioCandidata(int parametro)
         {
-            return new FormEstudianteVisitaCandidatas();
+            return new FormEstudianteVisitaCandidatas(parametro);
         }
 
         private void btn_MissFotogenica_Click(object sender, EventArgs e)
         {
-            formularioCandidata().Show();
+            int parametro = 1;
+            formularioCandidata(parametro).Show();
             this.Hide();
         }
 
         private void btn_Miss_Click(object sender, EventArgs e)
         {
-            formularioCandidata().Show();
+            int parametro = 2;
+            formularioCandidata(parametro).Show();
             this.Hide(); 
         }
 

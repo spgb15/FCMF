@@ -31,18 +31,17 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Foto_Candidata = new System.Windows.Forms.PictureBox();
             this.lbl_nombre = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.fecha = new System.Windows.Forms.Label();
+            this.email = new System.Windows.Forms.Label();
+            this.telef = new System.Windows.Forms.Label();
+            this.dirr = new System.Windows.Forms.Label();
+            this.lbl_aspiraciones = new System.Windows.Forms.Label();
+            this.lbl_interes = new System.Windows.Forms.Label();
+            this.lbl_habilidades = new System.Windows.Forms.Label();
+            this.pasatiemp = new System.Windows.Forms.Label();
+            this.lbl_comentario = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lbl_comentarioRec = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -53,7 +52,6 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Foto_Candidata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -78,12 +76,14 @@
             this.Foto_Candidata.Margin = new System.Windows.Forms.Padding(4);
             this.Foto_Candidata.Name = "Foto_Candidata";
             this.Foto_Candidata.Size = new System.Drawing.Size(329, 328);
+            this.Foto_Candidata.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Foto_Candidata.TabIndex = 1;
             this.Foto_Candidata.TabStop = false;
             // 
             // lbl_nombre
             // 
             this.lbl_nombre.AutoSize = true;
+            this.lbl_nombre.BackColor = System.Drawing.Color.Transparent;
             this.lbl_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_nombre.Location = new System.Drawing.Point(28, 391);
             this.lbl_nombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -93,118 +93,114 @@
             this.lbl_nombre.Text = "Nombre:";
             this.lbl_nombre.UseMnemonic = false;
             // 
-            // label1
+            // fecha
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(392, 43);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Fecha de nacimiento:";
-            this.label1.UseMnemonic = false;
+            this.fecha.AutoSize = true;
+            this.fecha.BackColor = System.Drawing.Color.Transparent;
+            this.fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fecha.Location = new System.Drawing.Point(375, 42);
+            this.fecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.fecha.Name = "fecha";
+            this.fecha.Size = new System.Drawing.Size(219, 25);
+            this.fecha.TabIndex = 3;
+            this.fecha.Text = "Fecha de nacimiento:";
+            this.fecha.UseMnemonic = false;
             // 
-            // label5
+            // email
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(794, 88);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 25);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Mail:";
+            this.email.AutoSize = true;
+            this.email.BackColor = System.Drawing.Color.Transparent;
+            this.email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email.Location = new System.Drawing.Point(794, 88);
+            this.email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(59, 25);
+            this.email.TabIndex = 14;
+            this.email.Text = "Mail:";
             // 
-            // label4
+            // telef
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(794, 43);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 25);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Teléfono:";
+            this.telef.AutoSize = true;
+            this.telef.BackColor = System.Drawing.Color.Transparent;
+            this.telef.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.telef.Location = new System.Drawing.Point(794, 43);
+            this.telef.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.telef.Name = "telef";
+            this.telef.Size = new System.Drawing.Size(104, 25);
+            this.telef.TabIndex = 13;
+            this.telef.Text = "Teléfono:";
             // 
-            // label3
+            // dirr
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(392, 88);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 25);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Dirección:";
+            this.dirr.AutoSize = true;
+            this.dirr.BackColor = System.Drawing.Color.Transparent;
+            this.dirr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dirr.Location = new System.Drawing.Point(392, 88);
+            this.dirr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dirr.Name = "dirr";
+            this.dirr.Size = new System.Drawing.Size(109, 25);
+            this.dirr.TabIndex = 12;
+            this.dirr.Text = "Dirección:";
             // 
-            // label6
+            // lbl_aspiraciones
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(392, 281);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(144, 25);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Aspiraciones:";
+            this.lbl_aspiraciones.AutoSize = true;
+            this.lbl_aspiraciones.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_aspiraciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_aspiraciones.Location = new System.Drawing.Point(392, 281);
+            this.lbl_aspiraciones.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_aspiraciones.Name = "lbl_aspiraciones";
+            this.lbl_aspiraciones.Size = new System.Drawing.Size(144, 25);
+            this.lbl_aspiraciones.TabIndex = 18;
+            this.lbl_aspiraciones.Text = "Aspiraciones:";
             // 
-            // label2
+            // lbl_interes
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(392, 232);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 25);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Intereses:";
+            this.lbl_interes.AutoSize = true;
+            this.lbl_interes.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_interes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_interes.Location = new System.Drawing.Point(392, 232);
+            this.lbl_interes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_interes.Name = "lbl_interes";
+            this.lbl_interes.Size = new System.Drawing.Size(108, 25);
+            this.lbl_interes.TabIndex = 17;
+            this.lbl_interes.Text = "Intereses:";
             // 
-            // label7
+            // lbl_habilidades
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(392, 185);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(132, 25);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Habilidades:";
+            this.lbl_habilidades.AutoSize = true;
+            this.lbl_habilidades.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_habilidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_habilidades.Location = new System.Drawing.Point(392, 185);
+            this.lbl_habilidades.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_habilidades.Name = "lbl_habilidades";
+            this.lbl_habilidades.Size = new System.Drawing.Size(132, 25);
+            this.lbl_habilidades.TabIndex = 16;
+            this.lbl_habilidades.Text = "Habilidades:";
             // 
-            // label8
+            // pasatiemp
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(392, 134);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(143, 25);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Pasatiempos:";
+            this.pasatiemp.AutoSize = true;
+            this.pasatiemp.BackColor = System.Drawing.Color.Transparent;
+            this.pasatiemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasatiemp.Location = new System.Drawing.Point(392, 134);
+            this.pasatiemp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pasatiemp.Name = "pasatiemp";
+            this.pasatiemp.Size = new System.Drawing.Size(143, 25);
+            this.pasatiemp.TabIndex = 15;
+            this.pasatiemp.Text = "Pasatiempos:";
             // 
-            // label9
+            // lbl_comentario
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(28, 434);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 25);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Edad:";
-            this.label9.UseMnemonic = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(392, 331);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(130, 25);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "Comentario:";
+            this.lbl_comentario.AutoSize = true;
+            this.lbl_comentario.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_comentario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_comentario.Location = new System.Drawing.Point(392, 331);
+            this.lbl_comentario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_comentario.Name = "lbl_comentario";
+            this.lbl_comentario.Size = new System.Drawing.Size(130, 25);
+            this.lbl_comentario.TabIndex = 20;
+            this.lbl_comentario.Text = "Comentario:";
             // 
             // textBox1
             // 
@@ -215,16 +211,17 @@
             this.textBox1.Size = new System.Drawing.Size(546, 27);
             this.textBox1.TabIndex = 21;
             // 
-            // label11
+            // lbl_comentarioRec
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(392, 382);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(242, 25);
-            this.label11.TabIndex = 22;
-            this.label11.Text = "Comentarios Recientes:";
+            this.lbl_comentarioRec.AutoSize = true;
+            this.lbl_comentarioRec.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_comentarioRec.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_comentarioRec.Location = new System.Drawing.Point(392, 382);
+            this.lbl_comentarioRec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_comentarioRec.Name = "lbl_comentarioRec";
+            this.lbl_comentarioRec.Size = new System.Drawing.Size(242, 25);
+            this.lbl_comentarioRec.TabIndex = 22;
+            this.lbl_comentarioRec.Text = "Comentarios Recientes:";
             // 
             // dataGridView1
             // 
@@ -317,20 +314,11 @@
             this.textBox10.Size = new System.Drawing.Size(225, 22);
             this.textBox10.TabIndex = 33;
             // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(105, 436);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(109, 22);
-            this.textBox11.TabIndex = 34;
-            // 
             // FormPortafolioCandidata
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1104, 615);
-            this.Controls.Add(this.textBox11);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
@@ -341,18 +329,17 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lbl_comentarioRec);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_comentario);
+            this.Controls.Add(this.lbl_aspiraciones);
+            this.Controls.Add(this.lbl_interes);
+            this.Controls.Add(this.lbl_habilidades);
+            this.Controls.Add(this.pasatiemp);
+            this.Controls.Add(this.email);
+            this.Controls.Add(this.telef);
+            this.Controls.Add(this.dirr);
+            this.Controls.Add(this.fecha);
             this.Controls.Add(this.lbl_nombre);
             this.Controls.Add(this.Foto_Candidata);
             this.Controls.Add(this.pictureBox1);
@@ -373,18 +360,17 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox Foto_Candidata;
         private System.Windows.Forms.Label lbl_nombre;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label fecha;
+        private System.Windows.Forms.Label email;
+        private System.Windows.Forms.Label telef;
+        private System.Windows.Forms.Label dirr;
+        private System.Windows.Forms.Label lbl_aspiraciones;
+        private System.Windows.Forms.Label lbl_interes;
+        private System.Windows.Forms.Label lbl_habilidades;
+        private System.Windows.Forms.Label pasatiemp;
+        private System.Windows.Forms.Label lbl_comentario;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lbl_comentarioRec;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
@@ -395,6 +381,5 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
     }
 }

@@ -124,3 +124,37 @@ C:\Users\ASUS\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.
 C:\Users\ASUS\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 C:\Users\ASUS\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\ASUS\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\bin\Debug\CapaEntidades.dll
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\bin\Debug\CapaNegocios.dll
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\bin\Debug\CapaEntidades.pdb
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\bin\Debug\CapaNegocios.pdb
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.Login.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormAlbumAdmin.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormCandidataAdmin.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormComentariosAdmin.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormDatosPersonalesAdmin.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormFotoAdmin.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormPerfilUsuario.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormUsuarioAdmin.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.HomeAdministrador.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsEstudiante.FormEstudianteVisitaCandidatas.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsEstudiante.FormPortafolioCandidata.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsEstudiante.HomeEstudiante.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsGestor.FormAlbumGestor.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsGestor.FormCandidataGestor.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsGestor.FormComentariosGestor.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsGestor.FormDatosPersonalesGestor.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsGestor.FormFotoGestor.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsGestor.HomeGestor.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.pdb

@@ -10,6 +10,7 @@ using CapaDatos;
 using System.Security.AccessControl;
 using System.Net.NetworkInformation;
 using System.ComponentModel;
+using CapaEntidades;
 
 namespace CapaNegocios
 {
@@ -17,7 +18,7 @@ namespace CapaNegocios
 
 
     {
-        private CD_ManageData ObjectCD = new CD_ManageData();
+        private CD_ManageData ObjectCD = new CD_ManageData();        
  
 
         public void InsertarDatosPer(string nombres, DateTime fechaNac, string direccion, string teléfono, string mail, string url_foto, string titulo, string estado, DateTime fechaReg)
@@ -180,6 +181,21 @@ namespace CapaNegocios
             // Utiliza SP
             return ObjectCD.ObtenerReinado();
 
+        }
+
+        public List<string> ObtenerImagen(int reinado)
+        {
+            return ObjectCD.GetImagePaths(reinado);
+        }
+
+        public List<Candidata> ObtenerCandidata(int reinado)
+        {
+            return ObjectCD.ObtenerCandidatas( reinado);
+        }
+
+        public Candidata ObtenerDatos(int candita)
+        {
+            return ObjectCD.Datos(candita);
         }
 
     }
