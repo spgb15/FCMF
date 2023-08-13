@@ -82,6 +82,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Location = new System.Drawing.Point(153, 94);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(350, 361);
@@ -106,9 +107,9 @@
             this.Edad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Edad.Location = new System.Drawing.Point(531, 281);
             this.Edad.Name = "Edad";
-            this.Edad.Size = new System.Drawing.Size(69, 25);
+            this.Edad.Size = new System.Drawing.Size(228, 25);
             this.Edad.TabIndex = 5;
-            this.Edad.Text = "Edad:";
+            this.Edad.Text = "Fecha de Nacimiento: ";
             // 
             // btn_Portafolio
             // 
@@ -135,7 +136,7 @@
             // txtEdad
             // 
             this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtEdad.Location = new System.Drawing.Point(611, 281);
+            this.txtEdad.Location = new System.Drawing.Point(765, 278);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.ReadOnly = true;
             this.txtEdad.Size = new System.Drawing.Size(140, 30);

@@ -42,19 +42,22 @@
             this.lbl_comentario = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbl_comentarioRec = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.dgvComentario = new System.Windows.Forms.DataGridView();
+            this.txtTel = new System.Windows.Forms.TextBox();
+            this.txtMail = new System.Windows.Forms.TextBox();
+            this.txtDir = new System.Windows.Forms.TextBox();
+            this.txtPasatiempos = new System.Windows.Forms.TextBox();
+            this.txtHabilidades = new System.Windows.Forms.TextBox();
+            this.txtIntereses = new System.Windows.Forms.TextBox();
+            this.txtAspiraciones = new System.Windows.Forms.TextBox();
+            this.txtFecha = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.btn_izq = new System.Windows.Forms.Button();
+            this.btn_der = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Foto_Candidata)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvComentario)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -72,6 +75,7 @@
             // 
             // Foto_Candidata
             // 
+            this.Foto_Candidata.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Foto_Candidata.Location = new System.Drawing.Point(25, 43);
             this.Foto_Candidata.Margin = new System.Windows.Forms.Padding(4);
             this.Foto_Candidata.Name = "Foto_Candidata";
@@ -85,7 +89,7 @@
             this.lbl_nombre.AutoSize = true;
             this.lbl_nombre.BackColor = System.Drawing.Color.Transparent;
             this.lbl_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nombre.Location = new System.Drawing.Point(28, 391);
+            this.lbl_nombre.Location = new System.Drawing.Point(20, 434);
             this.lbl_nombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_nombre.Name = "lbl_nombre";
             this.lbl_nombre.Size = new System.Drawing.Size(94, 25);
@@ -223,112 +227,146 @@
             this.lbl_comentarioRec.TabIndex = 22;
             this.lbl_comentarioRec.Text = "Comentarios Recientes:";
             // 
-            // dataGridView1
+            // dgvComentario
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(391, 425);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(689, 157);
-            this.dataGridView1.TabIndex = 23;
+            this.dgvComentario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvComentario.Location = new System.Drawing.Point(391, 425);
+            this.dgvComentario.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvComentario.Name = "dgvComentario";
+            this.dgvComentario.ReadOnly = true;
+            this.dgvComentario.RowHeadersWidth = 51;
+            this.dgvComentario.Size = new System.Drawing.Size(689, 157);
+            this.dgvComentario.TabIndex = 23;
             // 
-            // textBox2
+            // txtTel
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(905, 44);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(175, 27);
-            this.textBox2.TabIndex = 25;
+            this.txtTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTel.Location = new System.Drawing.Point(905, 44);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.ReadOnly = true;
+            this.txtTel.Size = new System.Drawing.Size(175, 27);
+            this.txtTel.TabIndex = 25;
             // 
-            // textBox3
+            // txtMail
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(859, 90);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(221, 27);
-            this.textBox3.TabIndex = 26;
+            this.txtMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMail.Location = new System.Drawing.Point(859, 90);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.ReadOnly = true;
+            this.txtMail.Size = new System.Drawing.Size(221, 27);
+            this.txtMail.TabIndex = 26;
             // 
-            // textBox4
+            // txtDir
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(508, 90);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(279, 27);
-            this.textBox4.TabIndex = 27;
+            this.txtDir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDir.Location = new System.Drawing.Point(508, 90);
+            this.txtDir.Name = "txtDir";
+            this.txtDir.ReadOnly = true;
+            this.txtDir.Size = new System.Drawing.Size(279, 27);
+            this.txtDir.TabIndex = 27;
             // 
-            // textBox5
+            // txtPasatiempos
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(543, 136);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(537, 27);
-            this.textBox5.TabIndex = 28;
+            this.txtPasatiempos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPasatiempos.Location = new System.Drawing.Point(543, 136);
+            this.txtPasatiempos.Name = "txtPasatiempos";
+            this.txtPasatiempos.ReadOnly = true;
+            this.txtPasatiempos.Size = new System.Drawing.Size(537, 27);
+            this.txtPasatiempos.TabIndex = 28;
             // 
-            // textBox6
+            // txtHabilidades
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(532, 187);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(548, 27);
-            this.textBox6.TabIndex = 29;
+            this.txtHabilidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHabilidades.Location = new System.Drawing.Point(532, 187);
+            this.txtHabilidades.Name = "txtHabilidades";
+            this.txtHabilidades.ReadOnly = true;
+            this.txtHabilidades.Size = new System.Drawing.Size(548, 27);
+            this.txtHabilidades.TabIndex = 29;
             // 
-            // textBox7
+            // txtIntereses
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(508, 234);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(572, 27);
-            this.textBox7.TabIndex = 30;
+            this.txtIntereses.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIntereses.Location = new System.Drawing.Point(508, 234);
+            this.txtIntereses.Name = "txtIntereses";
+            this.txtIntereses.ReadOnly = true;
+            this.txtIntereses.Size = new System.Drawing.Size(572, 27);
+            this.txtIntereses.TabIndex = 30;
             // 
-            // textBox8
+            // txtAspiraciones
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(544, 283);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(536, 27);
-            this.textBox8.TabIndex = 31;
+            this.txtAspiraciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAspiraciones.Location = new System.Drawing.Point(544, 283);
+            this.txtAspiraciones.Name = "txtAspiraciones";
+            this.txtAspiraciones.ReadOnly = true;
+            this.txtAspiraciones.Size = new System.Drawing.Size(536, 27);
+            this.txtAspiraciones.TabIndex = 31;
             // 
-            // textBox9
+            // txtFecha
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(619, 43);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(168, 27);
-            this.textBox9.TabIndex = 32;
+            this.txtFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFecha.Location = new System.Drawing.Point(619, 43);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.ReadOnly = true;
+            this.txtFecha.Size = new System.Drawing.Size(168, 27);
+            this.txtFecha.TabIndex = 32;
             // 
-            // textBox10
+            // txtNombre
             // 
-            this.textBox10.Location = new System.Drawing.Point(129, 393);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(225, 22);
-            this.textBox10.TabIndex = 33;
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtNombre.Location = new System.Drawing.Point(129, 434);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.ReadOnly = true;
+            this.txtNombre.Size = new System.Drawing.Size(225, 30);
+            this.txtNombre.TabIndex = 33;
+            // 
+            // btn_izq
+            // 
+            this.btn_izq.Location = new System.Drawing.Point(39, 386);
+            this.btn_izq.Name = "btn_izq";
+            this.btn_izq.Size = new System.Drawing.Size(95, 42);
+            this.btn_izq.TabIndex = 34;
+            this.btn_izq.Text = "Anterior";
+            this.btn_izq.UseVisualStyleBackColor = true;
+            this.btn_izq.Click += new System.EventHandler(this.btn_izq_Click);
+            // 
+            // btn_der
+            // 
+            this.btn_der.Location = new System.Drawing.Point(279, 386);
+            this.btn_der.Name = "btn_der";
+            this.btn_der.Size = new System.Drawing.Size(85, 42);
+            this.btn_der.TabIndex = 35;
+            this.btn_der.Text = "Siguiente";
+            this.btn_der.UseVisualStyleBackColor = true;
+            this.btn_der.Click += new System.EventHandler(this.btn_der_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 559);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(342, 44);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "←Regresar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormPortafolioCandidata
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1104, 615);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_der);
+            this.Controls.Add(this.btn_izq);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtFecha);
+            this.Controls.Add(this.txtAspiraciones);
+            this.Controls.Add(this.txtIntereses);
+            this.Controls.Add(this.txtHabilidades);
+            this.Controls.Add(this.txtPasatiempos);
+            this.Controls.Add(this.txtDir);
+            this.Controls.Add(this.txtMail);
+            this.Controls.Add(this.txtTel);
+            this.Controls.Add(this.dgvComentario);
             this.Controls.Add(this.lbl_comentarioRec);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lbl_comentario);
@@ -349,7 +387,7 @@
             this.Load += new System.EventHandler(this.FormPortafolioCandidata_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Foto_Candidata)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvComentario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -371,15 +409,18 @@
         private System.Windows.Forms.Label lbl_comentario;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbl_comentarioRec;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.DataGridView dgvComentario;
+        private System.Windows.Forms.TextBox txtTel;
+        private System.Windows.Forms.TextBox txtMail;
+        private System.Windows.Forms.TextBox txtDir;
+        private System.Windows.Forms.TextBox txtPasatiempos;
+        private System.Windows.Forms.TextBox txtHabilidades;
+        private System.Windows.Forms.TextBox txtIntereses;
+        private System.Windows.Forms.TextBox txtAspiraciones;
+        private System.Windows.Forms.TextBox txtFecha;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Button btn_izq;
+        private System.Windows.Forms.Button btn_der;
+        private System.Windows.Forms.Button button1;
     }
 }

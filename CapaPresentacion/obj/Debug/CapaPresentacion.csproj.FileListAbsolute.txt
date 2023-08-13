@@ -158,3 +158,5 @@ C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPres
 C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormGanadoraFotogenia.resources
+C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsEstudiante.FormGanadoraReina.resources

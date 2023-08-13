@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 using CapaEntidades;
+using System.Reflection;
 
 namespace CapaDatos
 {
@@ -542,7 +543,7 @@ namespace CapaDatos
                     paths.Add(reader.GetString(0));
                 }
                 reader.Close();
-
+                conn.Close();
             }
             return paths;
         }
@@ -624,11 +625,28 @@ namespace CapaDatos
                     }
                 }
 
-
-
             }
         }
+        public List<string> ObtenerAlbumCandidata(int index)
+        {
+            List<string> paths = new List<string>();
 
+            using (SqlConnection conn = new SqlConnection(conexion))
+            {
+                conn.Open();
+
+                SqlCommand cmd = new SqlCommand("SELECT URL_FOTO FROM fotos WHERE id_candidata = " + index + " ;", conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    paths.Add(reader.GetString(0));
+                }
+                reader.Close();
+
+            }
+            return paths;
+        }
     }
 
 }

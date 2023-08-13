@@ -198,5 +198,10 @@ namespace CapaNegocios
             return ObjectCD.Datos(candita);
         }
 
+        public List<string> ObtenerAlbumCandidata(int candita)
+        {
+            return ObjectCD.ObtenerAlbumCandidata(candita);
+        }
+
     }
 }

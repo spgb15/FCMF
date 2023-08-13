@@ -15,6 +15,12 @@ namespace CapaPresentacion.ViewsEstudiante
     public partial class FormPortafolioCandidata : Form
     {
         CN_GetData Datos = new CN_GetData();
+        Candidata candidatas = new Candidata();
+
+        private List<string> imagenPaths;
+        private int currentIndex = 0;
+
+
         public int candidataId { get; set; }
         
         public FormPortafolioCandidata()
@@ -52,9 +58,64 @@ namespace CapaPresentacion.ViewsEstudiante
             Candidata cand = Datos.ObtenerDatos(candidataId);
 
             //Llenar los campos
-            Foto_Candidata.Image = Image.FromFile(cand.Url);
+            txtNombre.Text = cand.Nombre;
+            txtFecha.Text = DateTime.Parse(cand.Fecha_nac).ToString("dd/MM/yyyy");
+            txtTel.Text = cand.Telefono;
+            txtDir.Text = cand.Direccion;
+            txtMail.Text = cand.Mail;
+            txtPasatiempos.Text = cand.Pasatiempo;
+            txtHabilidades.Text = cand.Habilidades;
+            txtIntereses.Text = cand.Intereses;
+            txtAspiraciones.Text = cand.Aspiraciones;
+
+
+            imagenPaths = Datos.ObtenerAlbumCandidata(candidataId);
+
+            if (imagenPaths.Count > 0)
+            {
+                LoadImageByIndex(currentIndex);
+
+
+
+
+            }
+            else
+            {
+                System.Windows.MessageBox.Show("No se encontraron imagenes en la carpeta");
+            }
+
+
 
         }
 
+        private void LoadImageByIndex(int index)
+        {
+
+        List<string> candidatas = Datos.ObtenerAlbumCandidata(index);
+
+            if (index >= 0 && index < imagenPaths.Count)
+            {
+                Foto_Candidata.Image = Image.FromFile(imagenPaths[index]);
+            }
+        }
+
+        private void btn_izq_Click(object sender, EventArgs e)
+        {
+            currentIndex = (currentIndex - 1 + imagenPaths.Count) % imagenPaths.Count;
+            LoadImageByIndex(currentIndex);
+        }
+
+        private void btn_der_Click(object sender, EventArgs e)
+        {
+            currentIndex = (currentIndex + 1) % imagenPaths.Count;
+            LoadImageByIndex(currentIndex);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            HomeEstudiante formulario = new HomeEstudiante();
+            formulario.Show();
+            this.Hide();
+        }
     }
 }
