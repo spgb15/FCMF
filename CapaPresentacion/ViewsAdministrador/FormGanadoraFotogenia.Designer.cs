@@ -34,6 +34,8 @@
             this.labelFotogenia = new System.Windows.Forms.Label();
             this.txtPuntaje = new System.Windows.Forms.TextBox();
             this.txtNombreFotogenia = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotogenia)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +66,7 @@
             this.pictureBoxFotogenia.Location = new System.Drawing.Point(52, 88);
             this.pictureBoxFotogenia.Name = "pictureBoxFotogenia";
             this.pictureBoxFotogenia.Size = new System.Drawing.Size(278, 238);
+            this.pictureBoxFotogenia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxFotogenia.TabIndex = 2;
             this.pictureBoxFotogenia.TabStop = false;
             // 
@@ -95,11 +98,33 @@
             this.txtNombreFotogenia.Size = new System.Drawing.Size(233, 34);
             this.txtNombreFotogenia.TabIndex = 5;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(42, 367);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Anterior";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(255, 367);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Siguiente";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FormGanadoraFotogenia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtNombreFotogenia);
             this.Controls.Add(this.txtPuntaje);
             this.Controls.Add(this.labelFotogenia);
@@ -124,5 +149,7 @@
         private System.Windows.Forms.Label labelFotogenia;
         private System.Windows.Forms.TextBox txtPuntaje;
         private System.Windows.Forms.TextBox txtNombreFotogenia;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -218,6 +218,10 @@ namespace CapaNegocios
             return ObjectCD.BuscarIdEst(usuario, votacion);
         }
         
+        public int BuscarVoto(int id, string votacion)
+        {
+            return ObjectCD.BuscarVoto(id, votacion);
+        }
 
     }
 }

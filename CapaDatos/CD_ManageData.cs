@@ -693,7 +693,7 @@ namespace CapaDatos
 
         public bool BuscarIdEst(int id, string votacion)
         {
-            string query = "SELECT COUNT(*) FROM " + votacion + " WHERE id_usuario = @id";
+            string query = "SELECT * FROM " + votacion + " WHERE id_usuario = @id";
 
             using (SqlConnection conn = new SqlConnection(conexion))
             {
@@ -711,6 +711,27 @@ namespace CapaDatos
                 }
             }
         }
+
+        public int BuscarVoto(int id, string votacion)
+        {
+            string query = "SELECT COUNT(*) as voto FROM " + votacion + " WHERE id_candita = @id";
+
+            using (SqlConnection conn = new SqlConnection(conexion))
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    // Ejecutar la consulta y obtener el resultado escalar
+                    int count = (int)cmd.ExecuteScalar();
+                    return count;
+                }
+            }
+        }
+
+
 
     }
 

@@ -12,5 +12,6 @@ namespace CapaEntidades
 
         public static int votacion { get; set; }
 
+        public static int id_candidata { get; set; }
     }
 }

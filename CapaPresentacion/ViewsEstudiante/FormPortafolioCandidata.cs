@@ -42,6 +42,7 @@ namespace CapaPresentacion.ViewsEstudiante
 
         private void FormPortafolioCandidata_Load(object sender, EventArgs e)
         {
+            idEstudiante.id_candidata = candidataId;
             //Se establece el parent del fondo
             this.lbl_nombre.Parent = this.pictureBox1;
             this.fecha.Parent = this.pictureBox1;

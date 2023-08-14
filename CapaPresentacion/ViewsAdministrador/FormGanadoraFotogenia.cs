@@ -67,7 +67,7 @@ namespace CapaPresentacion.ViewsAdministrador
             this.label1.Parent = this.pictureBox1;
             this.label1.BackColor = Color.Transparent;
 
-            imagenPaths = datos.ObtenerImagen(parametro);
+            imagenPaths = datos.ObtenerImagen(1);
 
             if (imagenPaths.Count > 0)
             {
@@ -84,14 +84,28 @@ namespace CapaPresentacion.ViewsAdministrador
         }
         private void LoadImageByIndex(int index)
         {
-            List<Candidata> candidatas = datos.ObtenerCandidata(parametro);
+            List<Candidata> candidatas = datos.ObtenerCandidata(1);
 
             if (index >= 0 && index < imagenPaths.Count)
             {
                 pictureBoxFotogenia.Image = Image.FromFile(imagenPaths[index]);
                 txtNombreFotogenia.Text = candidatas[index].Nombre;
+                int voto = candidatas[index].Id_candidata;
+                txtPuntaje.Text = datos.BuscarVoto(voto, "votacionFotogenia").ToString();
 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            currentIndex = (currentIndex - 1 + imagenPaths.Count) % imagenPaths.Count;
+            LoadImageByIndex(currentIndex);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            currentIndex = (currentIndex + 1) % imagenPaths.Count;
+            LoadImageByIndex(currentIndex);
         }
     }
 }
