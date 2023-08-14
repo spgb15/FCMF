@@ -154,10 +154,10 @@ namespace CapaNegocios
             return ObjectCD.ObtenerFoto();
         }
 
-        public void InsertarComentarios(string id_foto, string id_estudiante, string estado, DateTime fechaReg)
+        public void InsertarComentarios(int id_foto, int id_estudiante, string comentario)
         {
 
-            ObjectCD.InsertarComentarios(int.Parse(id_foto), int.Parse(id_estudiante), char.Parse(estado), fechaReg);
+            ObjectCD.InsertarComentarios(id_foto, id_estudiante, comentario);
 
         }
         public void ActualizarComentarios(string id_comentarios, string id_foto, string id_estudiante, string estado, DateTime fechaReg)
@@ -201,6 +201,11 @@ namespace CapaNegocios
         public List<string> ObtenerAlbumCandidata(int candita)
         {
             return ObjectCD.ObtenerAlbumCandidata(candita);
+        }
+
+        public int ObtenerIdFoto(string candita)
+        {
+            return ObjectCD.ObtenerIdFoto(candita);
         }
 
     }

@@ -24,6 +24,7 @@ CREATE TABLE usuario(
 	FOREIGN KEY (id_perfil) REFERENCES perfilUsuario(id_perfil)
 )
 
+
 CREATE TABLE datosPersonales(
 	id_datosPersonales	INT				PRIMARY KEY		IDENTITY(1,1),
 	nombres				VARCHAR(255)	NOT NULL,
@@ -89,6 +90,9 @@ CREATE TABLE comentarios(
 	FOREIGN KEY (id_estudiante) REFERENCES usuario(id_usuario)
 
 );
+
+ALTER TABLE comentarios
+ADD comentario VARCHAR(100);
 
 CREATE TABLE votacionFotogenia(
 	id_fotogenia		INT				PRIMARY KEY		IDENTITY(1,1),

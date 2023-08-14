@@ -232,11 +232,18 @@ END
 
 Create Procedure InsertarComentarios
 
-@id_fo int, @id_est int,@est char, @feRe date
+@id_fo int, @id_est int, @comen varchar
 
 as
 
-Insert Into comentarios (id_foto, id_estudiante, estado, fechaReg) values(@id_fo, @id_est, @est, @feRe);
+
+ALTER PROCEDURE InsertarComentarios
+@id_fo int, @id_est int, @comen nvarchar
+AS
+BEGIN
+    Insert Into comentarios (id_foto, id_estudiante, comentario) values(@id_fo, @id_est, @comen);
+
+END;
 
 Create Procedure ModificarComentarios
 
@@ -325,4 +332,11 @@ BEGIN
     SELECT * FROM votacionReina; 
 END
 
+
+CREATE PROCEDURE ObtenerFotosCandidata
+    @idCandidata INT
+AS
+BEGIN
+    SELECT URL_FOTO FROM fotos WHERE id_candidata = @idCandidata;
+END;
 

@@ -8,12 +8,19 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using CapaEntidades;
 using System.Reflection;
+using System.Security.Policy;
+using System.IO;
 
 namespace CapaDatos
 {
     public class CD_ManageData
     {
         private CD_connection conn = new CD_connection();
+        static string server = "DESKTOP-7AKP9MA"; //Nombre del servidor de la base de datos
+
+        //String para hacer la conexion con la BD
+        private string conexion = "Server=" + server + "; Database = DB_ReinaFacultad; Integrated Security=true";
+
 
         public bool InsertarDatosPersonales(string nombres, DateTime fechaNac, string direccion, string teléfono, string mail, string url_foto, string titulo, char estado, DateTime fechaReg)
         {
@@ -370,7 +377,6 @@ namespace CapaDatos
             cmd.ExecuteNonQuery();
             conn.CerrarConexion();
             return true;
-
         }
 
         public bool InsertarFotos(int id_album, int id_candidata, string titulo, string descripcion, string url_foto, char estado, DateTime fechaReg)
@@ -443,22 +449,20 @@ namespace CapaDatos
 
         }
 
-        public bool InsertarComentarios(int id_foto, int id_estudiante, char estado, DateTime fechaReg)
+        public bool InsertarComentarios(int id_foto, int id_estudiante, string comentario)
         {
 
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn.AbrirConexion();
-            cmd.CommandText = "InsertarComentarios";
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@id_fo", id_foto);
-            cmd.Parameters.AddWithValue("@id_est", id_estudiante);
-            cmd.Parameters.AddWithValue("@est", estado);
-            cmd.Parameters.AddWithValue("@feRe", fechaReg);
+            cmd.CommandText = "Insert Into comentarios (id_foto, id_estudiante, comentario) values ( " + id_foto + "," + id_estudiante + ", '" + comentario + "');";
+;
+
             cmd.ExecuteNonQuery();
             conn.CerrarConexion();
             return true;
             //@id_fo, @id_est, @est, @feRe
         }
+
 
         public bool ActualizarComentarios(int id_comentarios, int id_foto, int id_estudiante, char estado, DateTime fechaReg)
         {
@@ -523,10 +527,6 @@ namespace CapaDatos
             adapter.Fill(dt);
             return dt;
         }
-        static string server = "LAPTOP-JSLER5RB"; //Nombre del servidor de la base de datos
-
-        //String para hacer la conexion con la BD
-        private string conexion = "Server=" + server + "; Database = DB_ReinaFacultad; Integrated Security=true";
 
         public List<string> GetImagePaths(int reinado)
         {
@@ -547,6 +547,7 @@ namespace CapaDatos
             }
             return paths;
         }
+        
 
         public List<Candidata> ObtenerCandidatas(int reinado)
         {
@@ -614,7 +615,7 @@ namespace CapaDatos
                                 Telefono = reader["teléfono"].ToString(),
                                 Mail = reader["mail"].ToString(),
                                 Titulo = reader["Titulo"].ToString(),
-                                Url = reader["url_foto"].ToString()
+                                Urls = reader["url_foto"].ToString()
                             };
                             return candidata;
                         }
@@ -635,7 +636,13 @@ namespace CapaDatos
             {
                 conn.Open();
 
-                SqlCommand cmd = new SqlCommand("SELECT URL_FOTO FROM fotos WHERE id_candidata = " + index + " ;", conn);
+                SqlCommand cmd = new SqlCommand("ObtenerFotosCandidata", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter paramIdCandidata = new SqlParameter("@idCandidata", SqlDbType.Int);
+                paramIdCandidata.Value = index;
+                cmd.Parameters.Add(paramIdCandidata);
+
                 SqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
@@ -643,10 +650,36 @@ namespace CapaDatos
                     paths.Add(reader.GetString(0));
                 }
                 reader.Close();
-
             }
+
             return paths;
         }
+
+        public int ObtenerIdFoto(string UrlFoto)
+        {
+            int idFoto = -1;
+
+            using (SqlConnection conn = new SqlConnection(conexion))
+            {
+                conn.Open();
+
+                string query = "SELECT id_foto FROM fotos WHERE url_foto = '" + UrlFoto + "';"; 
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+
+                    object result = cmd.ExecuteScalar();
+
+                    if (result != null && result != DBNull.Value)
+                    {
+                        idFoto = Convert.ToInt32(result);
+                    }
+                }
+            }
+
+            return idFoto;
+        }
+
     }
 
 }

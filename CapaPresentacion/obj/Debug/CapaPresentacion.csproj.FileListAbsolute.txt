@@ -160,3 +160,5 @@ C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPres
 C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormGanadoraFotogenia.resources
 C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsEstudiante.FormGanadoraReina.resources
+C:\Users\spaul\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsAdministrador.FormGanadoraFotogenia.resources
+C:\Users\spaul\Documents\GitHub\FCMF\CapaPresentacion\obj\Debug\CapaPresentacion.ViewsEstudiante.FormGanadoraReina.resources

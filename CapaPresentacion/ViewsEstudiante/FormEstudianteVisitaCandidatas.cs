@@ -8,6 +8,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -27,6 +28,7 @@ namespace CapaPresentacion.ViewsEstudiante
         private CN_GetData datos = new CN_GetData();
         private int parametro;
         private int id_candidata;
+        private string urlss;
         public FormEstudianteVisitaCandidatas( int parametro)
         {
             InitializeComponent();
@@ -75,8 +77,7 @@ namespace CapaPresentacion.ViewsEstudiante
                 pictureBox2.Image = Image.FromFile(imagenPaths[index]);
                 txtNombre.Text = candidatas[index].Nombre;
                 txtEdad.Text = DateTime.Parse(candidatas[index].Fecha_nac).ToString("dd/MM/yyyy");
-                id_candidata = Convert.ToInt32(candidatas[index].Id_candidata);
-            }
+                id_candidata = Convert.ToInt32(candidatas[index].Id_candidata);            }
         }
 
         private void btn_der_Click_1(object sender, EventArgs e)

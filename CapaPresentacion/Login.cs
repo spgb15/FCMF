@@ -19,6 +19,8 @@ namespace CapaPresentacion
     public partial class Login : Form
     {
         LoginNegocio neg = new LoginNegocio();
+        private int usua;
+
 
         public Login()
         {
@@ -59,6 +61,7 @@ namespace CapaPresentacion
                 if (usuario != null)
                 {
                     int perfil = usuario.Id_Perfil;
+                    idEstudiante.IdEstudiante = usuario.Id_Usuario;
                     AbriForm(perfil).Show();
                     this.Hide();
                 }

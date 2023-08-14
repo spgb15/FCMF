@@ -33,7 +33,7 @@ namespace CapaPresentacion.ViewsAdministrador
             {
                 if (isInsert == true)
                 {
-                    ObjectCN.InsertarComentarios(cmbIDFoto.Text, cmbIDEst.Text, cmbEst.Text, dtpFechaRe.Value);
+                    //ObjectCN.InsertarComentarios(cmbIDFoto.Text, cmbIDEst.Text);
                     MessageBox.Show("Se guardo correctamente");
                 }
                 else
@@ -111,6 +111,11 @@ namespace CapaPresentacion.ViewsAdministrador
             {
                 MessageBox.Show("Debe seleccionar la fila");
             }
+        }
+
+        private void cmbIDFoto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

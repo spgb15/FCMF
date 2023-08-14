@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaEntidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace CapaPresentacion.ViewsEstudiante
 {
     public partial class HomeEstudiante : Form
     {
+        public int Id_estudiante { get; set; }
         public HomeEstudiante()
         {
             InitializeComponent();

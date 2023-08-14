@@ -97,6 +97,7 @@
             this.cmbIDFoto.Name = "cmbIDFoto";
             this.cmbIDFoto.Size = new System.Drawing.Size(121, 21);
             this.cmbIDFoto.TabIndex = 5;
+            this.cmbIDFoto.SelectedIndexChanged += new System.EventHandler(this.cmbIDFoto_SelectedIndexChanged);
             // 
             // cmbIDEst
             // 

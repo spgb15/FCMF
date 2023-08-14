@@ -15,14 +15,23 @@ namespace CapaPresentacion.ViewsEstudiante
     public partial class FormPortafolioCandidata : Form
     {
         CN_GetData Datos = new CN_GetData();
-        Candidata candidatas = new Candidata();
+        Candidata Candidatura = new Candidata();
+        Usuario usuario = new Usuario();
 
         private List<string> imagenPaths;
         private int currentIndex = 0;
 
+        foto fotos = new foto();
+
+        
+
+
 
         public int candidataId { get; set; }
-        
+        public int Id_estudiante { get; set; }
+
+        private string urls;
+
         public FormPortafolioCandidata()
         {
             InitializeComponent();
@@ -69,7 +78,7 @@ namespace CapaPresentacion.ViewsEstudiante
             txtAspiraciones.Text = cand.Aspiraciones;
 
 
-            imagenPaths = Datos.ObtenerAlbumCandidata(candidataId);
+        imagenPaths = Datos.ObtenerAlbumCandidata(candidataId);
 
             if (imagenPaths.Count > 0)
             {
@@ -85,17 +94,18 @@ namespace CapaPresentacion.ViewsEstudiante
             }
 
 
-
         }
 
         private void LoadImageByIndex(int index)
         {
 
-        List<string> candidatas = Datos.ObtenerAlbumCandidata(index);
+            List<string> candidatas = Datos.ObtenerAlbumCandidata(index);
 
             if (index >= 0 && index < imagenPaths.Count)
             {
                 Foto_Candidata.Image = Image.FromFile(imagenPaths[index]);
+                urls = imagenPaths[index];
+
             }
         }
 
@@ -103,12 +113,15 @@ namespace CapaPresentacion.ViewsEstudiante
         {
             currentIndex = (currentIndex - 1 + imagenPaths.Count) % imagenPaths.Count;
             LoadImageByIndex(currentIndex);
+            txtComentario.Text = "";
+
         }
 
         private void btn_der_Click(object sender, EventArgs e)
         {
             currentIndex = (currentIndex + 1) % imagenPaths.Count;
             LoadImageByIndex(currentIndex);
+            txtComentario.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -116,6 +129,17 @@ namespace CapaPresentacion.ViewsEstudiante
             HomeEstudiante formulario = new HomeEstudiante();
             formulario.Show();
             this.Hide();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            string comentario = txtComentario.Text;
+            int id_foto = Datos.ObtenerIdFoto(urls);
+            int id_usuario = idEstudiante.IdEstudiante;
+            Datos.InsertarComentarios(id_foto, id_usuario, comentario);
+            txtComentario.Clear();
+
+
         }
     }
 }
