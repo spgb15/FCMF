@@ -68,7 +68,7 @@ namespace CapaPresentacion.ViewsAdministrador
         }
         private void CargarDatosComentarios()
         {
-            dgvComentarios.DataSource = ObjectCN.GetComentarios();
+            //dgvComentarios.DataSource = ObjectCN.GetComentarios();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)

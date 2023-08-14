@@ -481,7 +481,7 @@ namespace CapaDatos
             //@id_com, @id_fo, @id_est, @est, @feRe
         }
         //Trabaja con Store Procedure
-        public DataTable ObtenerComentarios()
+        public DataTable ObtenerComentarios(int id_foto)
         {
             DataTable dt = new DataTable();
             SqlCommand cmd = new SqlCommand();
@@ -489,8 +489,7 @@ namespace CapaDatos
             // abro conexion
             cmd.Connection = conn.AbrirConexion();
             // establezco el tipo de comamdo a store procedure
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "ObtenerComentarios";
+            cmd.CommandText = "SELECT * FROM COMENTARIOS JOIN USUARIO ON id_estudiante = id_usuario WHERE ID_FOTO = " + id_foto + ";";
             // ejecuto y asigno al adaptador
             adapter = new SqlDataAdapter(cmd);
             // asignar los resultados al datatable

@@ -9,5 +9,6 @@ namespace CapaEntidades
     public static class idEstudiante
     {
         public static int IdEstudiante { get; set; }
+
     }
 }

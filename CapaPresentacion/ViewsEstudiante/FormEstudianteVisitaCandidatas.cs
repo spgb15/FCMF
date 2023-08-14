@@ -28,7 +28,6 @@ namespace CapaPresentacion.ViewsEstudiante
         private CN_GetData datos = new CN_GetData();
         private int parametro;
         private int id_candidata;
-        private string urlss;
         public FormEstudianteVisitaCandidatas( int parametro)
         {
             InitializeComponent();

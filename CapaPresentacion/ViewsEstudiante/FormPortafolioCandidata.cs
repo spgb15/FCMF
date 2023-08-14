@@ -77,6 +77,7 @@ namespace CapaPresentacion.ViewsEstudiante
             txtIntereses.Text = cand.Intereses;
             txtAspiraciones.Text = cand.Aspiraciones;
 
+            
 
         imagenPaths = Datos.ObtenerAlbumCandidata(candidataId);
 
@@ -93,7 +94,7 @@ namespace CapaPresentacion.ViewsEstudiante
                 System.Windows.MessageBox.Show("No se encontraron imagenes en la carpeta");
             }
 
-
+            
         }
 
         private void LoadImageByIndex(int index)
@@ -105,6 +106,7 @@ namespace CapaPresentacion.ViewsEstudiante
             {
                 Foto_Candidata.Image = Image.FromFile(imagenPaths[index]);
                 urls = imagenPaths[index];
+                CargarComentariosEnDataGridView();
 
             }
         }
@@ -113,15 +115,14 @@ namespace CapaPresentacion.ViewsEstudiante
         {
             currentIndex = (currentIndex - 1 + imagenPaths.Count) % imagenPaths.Count;
             LoadImageByIndex(currentIndex);
-            txtComentario.Text = "";
-
+            txtComentario.Clear();
         }
 
         private void btn_der_Click(object sender, EventArgs e)
         {
             currentIndex = (currentIndex + 1) % imagenPaths.Count;
             LoadImageByIndex(currentIndex);
-            txtComentario.Text = "";
+            txtComentario.Clear();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -138,8 +139,42 @@ namespace CapaPresentacion.ViewsEstudiante
             int id_usuario = idEstudiante.IdEstudiante;
             Datos.InsertarComentarios(id_foto, id_usuario, comentario);
             txtComentario.Clear();
+            CargarComentariosEnDataGridView();
+
 
 
         }
+
+        private void CargarComentariosEnDataGridView()
+        {
+            int id_foto = Datos.ObtenerIdFoto(urls);
+
+            DataTable comentariosTable = Datos.GetComentarios(id_foto); // Obtén los comentarios para el id_foto
+
+            dgvComentario.Columns.Clear(); // Limpiar las columnas existentes
+
+            // Configurar AutoGenerateColumns en false
+            dgvComentario.AutoGenerateColumns = false;
+
+
+            // Crear la columna del nombre en el DataGridView
+            DataGridViewTextBoxColumn nombreColumn = new DataGridViewTextBoxColumn();
+            nombreColumn.HeaderText = "Nombre";
+            nombreColumn.DataPropertyName = "NOMBRES"; // El nombre de la columna en el DataTable
+            nombreColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvComentario.Columns.Add(nombreColumn);
+
+            // Crear la columna del comentario en el DataGridView
+            DataGridViewTextBoxColumn comentarioColumn = new DataGridViewTextBoxColumn();
+            comentarioColumn.HeaderText = "Comentario";
+            comentarioColumn.DataPropertyName = "Comentario"; // El nombre de la columna en el DataTable
+            comentarioColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgvComentario.Columns.Add(comentarioColumn);
+
+            // Asignar el DataTable al DataGridView
+            dgvComentario.DataSource = comentariosTable;
+        }
+
+
     }
 }

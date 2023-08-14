@@ -169,10 +169,10 @@ namespace CapaNegocios
         {
             ObjectCD.EliminarComentarios(int.Parse(id_comentarios));
         }
-        public DataTable GetComentarios()
+        public DataTable GetComentarios(int id_foto)
         {
             // Utiliza SP
-            return ObjectCD.ObtenerComentarios();
+            return ObjectCD.ObtenerComentarios(id_foto);
 
         }
 
@@ -207,6 +207,7 @@ namespace CapaNegocios
         {
             return ObjectCD.ObtenerIdFoto(candita);
         }
+        
 
     }
 }

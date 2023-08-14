@@ -28,11 +28,11 @@ namespace CapaPresentacion.ViewsGestor
 
         private void FormComentariosGestor_Load(object sender, EventArgs e)
         {
-            CargarDatosComentarios();
+            //CargarDatosComentarios();
         }
-        private void CargarDatosComentarios()
+        private void CargarDatosComentarios(int id_foto)
         {
-            dgvComentarios.DataSource = ObjectCN.GetComentarios();
+            dgvComentarios.DataSource = ObjectCN.GetComentarios(id_foto);
         }
         private void GetComboFoto()
         {
@@ -60,7 +60,7 @@ namespace CapaPresentacion.ViewsGestor
                     MessageBox.Show("Se actualizo correctamente");
                     isInsert = true;
                 }
-                CargarDatosComentarios();
+                //CargarDatosComentarios();
             }
             catch (Exception ex)
             {
@@ -102,7 +102,7 @@ namespace CapaPresentacion.ViewsGestor
                 {
                     MessageBox.Show(ex.Message.ToString());
                 }
-                CargarDatosComentarios();
+                //CargarDatosComentarios();
             }
             else
             {

@@ -19,7 +19,6 @@ namespace CapaPresentacion
     public partial class Login : Form
     {
         LoginNegocio neg = new LoginNegocio();
-        private int usua;
 
 
         public Login()
