@@ -1,4 +1,5 @@
 ﻿using CapaEntidades;
+using CapaNegocios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,11 +15,17 @@ namespace CapaPresentacion.ViewsEstudiante
     public partial class HomeEstudiante : Form
     {
         public int Id_estudiante { get; set; }
+        bool exitoso = false;
+        CN_GetData Datos = new CN_GetData();
+
         public HomeEstudiante()
         {
             InitializeComponent();
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            btn_Miss.Enabled = true;
+            btn_MissFotogenica.Enabled = true;
+
 
         }
 
@@ -53,6 +60,7 @@ namespace CapaPresentacion.ViewsEstudiante
         private void btn_MissFotogenica_Click(object sender, EventArgs e)
         {
             int parametro = 1;
+            idEstudiante.votacion = parametro;
             formularioCandidata(parametro).Show();
             this.Hide();
         }
@@ -60,6 +68,7 @@ namespace CapaPresentacion.ViewsEstudiante
         private void btn_Miss_Click(object sender, EventArgs e)
         {
             int parametro = 2;
+            idEstudiante.votacion = parametro;
             formularioCandidata(parametro).Show();
             this.Hide(); 
         }
@@ -75,6 +84,29 @@ namespace CapaPresentacion.ViewsEstudiante
             this.label2.Parent = this.pictureBox1;
             this.label1.BackColor = Color.Transparent;
             this.label2.BackColor = Color.Transparent;
+            int idUsuario = idEstudiante.IdEstudiante;
+
+            if(Datos.BuscarId(idUsuario, "votacionFotogenia"))
+            {
+                btn_MissFotogenica.Enabled = false;
+            }
+            else
+            {
+                btn_MissFotogenica.Enabled = true;
+            }
+
+            if (Datos.BuscarId(idUsuario, "votacionReina"))
+            {
+
+                btn_Miss.Enabled = false;
+            }
+            else
+            {
+                btn_Miss.Enabled = true;
+            }
+            
+
+
         }
     }
     }

@@ -679,6 +679,39 @@ namespace CapaDatos
             return idFoto;
         }
 
+        public bool InsertarVoto(string votacion ,int id_cand, int id_est)
+        {
+
+            string query = "INSERT INTO " + votacion +"(id_candita, id_usuario) VALUES (" + id_cand + ',' + id_est + ");";
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn.AbrirConexion();
+            cmd.CommandText = query;
+            cmd.ExecuteNonQuery();
+            conn.CerrarConexion();
+            return true;
+        }
+
+        public bool BuscarIdEst(int id, string votacion)
+        {
+            string query = "SELECT COUNT(*) FROM " + votacion + " WHERE id_usuario = @id";
+
+            using (SqlConnection conn = new SqlConnection(conexion))
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    // Ejecutar la consulta y obtener el resultado escalar
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                    // Si count es mayor que cero, significa que el ID se encontró en la tabla
+                    return count > 0;
+                }
+            }
+        }
+
     }
 
 }

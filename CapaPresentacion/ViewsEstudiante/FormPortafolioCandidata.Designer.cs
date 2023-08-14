@@ -56,6 +56,7 @@
             this.btn_der = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnVotar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Foto_Candidata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvComentario)).BeginInit();
@@ -228,7 +229,7 @@
             // 
             this.txtTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTel.Location = new System.Drawing.Point(679, 36);
-            this.txtTel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTel.Margin = new System.Windows.Forms.Padding(2);
             this.txtTel.Name = "txtTel";
             this.txtTel.ReadOnly = true;
             this.txtTel.Size = new System.Drawing.Size(132, 23);
@@ -238,7 +239,7 @@
             // 
             this.txtMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMail.Location = new System.Drawing.Point(644, 73);
-            this.txtMail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMail.Margin = new System.Windows.Forms.Padding(2);
             this.txtMail.Name = "txtMail";
             this.txtMail.ReadOnly = true;
             this.txtMail.Size = new System.Drawing.Size(167, 23);
@@ -248,7 +249,7 @@
             // 
             this.txtDir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDir.Location = new System.Drawing.Point(381, 73);
-            this.txtDir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDir.Margin = new System.Windows.Forms.Padding(2);
             this.txtDir.Name = "txtDir";
             this.txtDir.ReadOnly = true;
             this.txtDir.Size = new System.Drawing.Size(210, 23);
@@ -258,7 +259,7 @@
             // 
             this.txtPasatiempos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPasatiempos.Location = new System.Drawing.Point(407, 110);
-            this.txtPasatiempos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPasatiempos.Margin = new System.Windows.Forms.Padding(2);
             this.txtPasatiempos.Name = "txtPasatiempos";
             this.txtPasatiempos.ReadOnly = true;
             this.txtPasatiempos.Size = new System.Drawing.Size(404, 23);
@@ -268,7 +269,7 @@
             // 
             this.txtHabilidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHabilidades.Location = new System.Drawing.Point(399, 152);
-            this.txtHabilidades.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtHabilidades.Margin = new System.Windows.Forms.Padding(2);
             this.txtHabilidades.Name = "txtHabilidades";
             this.txtHabilidades.ReadOnly = true;
             this.txtHabilidades.Size = new System.Drawing.Size(412, 23);
@@ -278,7 +279,7 @@
             // 
             this.txtIntereses.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIntereses.Location = new System.Drawing.Point(381, 190);
-            this.txtIntereses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIntereses.Margin = new System.Windows.Forms.Padding(2);
             this.txtIntereses.Name = "txtIntereses";
             this.txtIntereses.ReadOnly = true;
             this.txtIntereses.Size = new System.Drawing.Size(430, 23);
@@ -288,7 +289,7 @@
             // 
             this.txtAspiraciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAspiraciones.Location = new System.Drawing.Point(408, 230);
-            this.txtAspiraciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAspiraciones.Margin = new System.Windows.Forms.Padding(2);
             this.txtAspiraciones.Name = "txtAspiraciones";
             this.txtAspiraciones.ReadOnly = true;
             this.txtAspiraciones.Size = new System.Drawing.Size(403, 23);
@@ -298,7 +299,7 @@
             // 
             this.txtFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFecha.Location = new System.Drawing.Point(464, 35);
-            this.txtFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFecha.Margin = new System.Windows.Forms.Padding(2);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.ReadOnly = true;
             this.txtFecha.Size = new System.Drawing.Size(127, 23);
@@ -308,7 +309,7 @@
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.txtNombre.Location = new System.Drawing.Point(97, 353);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.ReadOnly = true;
             this.txtNombre.Size = new System.Drawing.Size(170, 26);
@@ -317,7 +318,7 @@
             // btn_izq
             // 
             this.btn_izq.Location = new System.Drawing.Point(29, 314);
-            this.btn_izq.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_izq.Margin = new System.Windows.Forms.Padding(2);
             this.btn_izq.Name = "btn_izq";
             this.btn_izq.Size = new System.Drawing.Size(71, 34);
             this.btn_izq.TabIndex = 34;
@@ -328,7 +329,7 @@
             // btn_der
             // 
             this.btn_der.Location = new System.Drawing.Point(209, 314);
-            this.btn_der.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_der.Margin = new System.Windows.Forms.Padding(2);
             this.btn_der.Name = "btn_der";
             this.btn_der.Size = new System.Drawing.Size(64, 34);
             this.btn_der.TabIndex = 35;
@@ -338,8 +339,9 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(9, 454);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(256, 36);
             this.button1.TabIndex = 36;
@@ -357,11 +359,25 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
+            // btnVotar
+            // 
+            this.btnVotar.BackgroundImage = global::CapaPresentacion.Properties.Resources.Login_Fondo;
+            this.btnVotar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnVotar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVotar.Location = new System.Drawing.Point(9, 388);
+            this.btnVotar.Name = "btnVotar";
+            this.btnVotar.Size = new System.Drawing.Size(256, 61);
+            this.btnVotar.TabIndex = 38;
+            this.btnVotar.Text = "¿ES TU FAVORITA? VOTA POR ELLA ❤";
+            this.btnVotar.UseVisualStyleBackColor = true;
+            this.btnVotar.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FormPortafolioCandidata
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(828, 500);
+            this.Controls.Add(this.btnVotar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_der);
@@ -431,5 +447,6 @@
         private System.Windows.Forms.Button btn_der;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnVotar;
     }
 }

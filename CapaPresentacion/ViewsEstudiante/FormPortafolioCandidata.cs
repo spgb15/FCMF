@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -31,6 +32,8 @@ namespace CapaPresentacion.ViewsEstudiante
         public int Id_estudiante { get; set; }
 
         private string urls;
+
+        bool exitoso = false;
 
         public FormPortafolioCandidata()
         {
@@ -175,6 +178,30 @@ namespace CapaPresentacion.ViewsEstudiante
             dgvComentario.DataSource = comentariosTable;
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int id_votacion = idEstudiante.votacion;
+            int id_est = idEstudiante.IdEstudiante;
+            string voto = string.Empty;
+            switch (id_votacion) 
+            {
+                case 1:
+                    voto = "votacionFotogenia";
+                    break;
+                case 2:
+                    voto = "votacionReina";
+                    break;
+            }
 
+            exitoso = Datos.InsertarVoto(voto, candidataId, id_est);
+
+            if (exitoso)
+            { 
+                MessageBox.Show("Gracias por tu voto ❤");
+                HomeEstudiante home = new HomeEstudiante();
+                home.Show();
+                this.Hide();
+            }
+        }
     }
 }

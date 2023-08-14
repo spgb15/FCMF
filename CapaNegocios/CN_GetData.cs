@@ -207,6 +207,16 @@ namespace CapaNegocios
         {
             return ObjectCD.ObtenerIdFoto(candita);
         }
+
+        public bool InsertarVoto(string voto, int id_cand, int id_est)
+        {
+            return ObjectCD.InsertarVoto(voto, id_cand, id_est);
+        }
+
+        public bool BuscarId(int usuario, string votacion)
+        {
+            return ObjectCD.BuscarIdEst(usuario, votacion);
+        }
         
 
     }
