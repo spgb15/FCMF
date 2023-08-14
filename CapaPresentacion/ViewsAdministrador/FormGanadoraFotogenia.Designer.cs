@@ -57,9 +57,9 @@
             this.label1.Font = new System.Drawing.Font("Sitka Small", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(221, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 31);
+            this.label1.Size = new System.Drawing.Size(343, 31);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Ganadora de Miss Fotogenia";
+            this.label1.Text = "Resultados de Miss Fotogenia";
             // 
             // pictureBoxFotogenia
             // 

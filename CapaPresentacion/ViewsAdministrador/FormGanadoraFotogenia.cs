@@ -26,41 +26,6 @@ namespace CapaPresentacion.ViewsAdministrador
         {
             InitializeComponent();
         }
-        
-        private void MostrarResultadoFotogenia()
-        {
-            try
-            {
-                // Obtener los resultados de la votación de Fotogenia
-                SqlCommand cmdFotogenia = new SqlCommand("ObtenerVotacionFotogenia");
-                cmdFotogenia.CommandType = CommandType.StoredProcedure;
-                using (SqlDataReader reader = cmdFotogenia.ExecuteReader())
-                {
-                    if (reader.HasRows)
-                    {
-                        // Procesar los resultados y mostrarlos en la interfaz
-                        while (reader.Read())
-                        {
-                            string nombreGanadoraFotogenia = reader["nombre"].ToString();
-                            string rutaFotoGanadoraFotogenia = reader["ruta_foto"].ToString();
-
-                            labelFotogenia.Text = nombreGanadoraFotogenia;
-                            pictureBoxFotogenia.Image = Image.FromFile(rutaFotoGanadoraFotogenia);
-                        }
-
-                    }
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error" + ex.Message);
-            }
-            finally
-            {
-                conn.CerrarConexion();
-            }
-        }
 
         private void FormGanadoraFotogenia_Load(object sender, EventArgs e)
         {
