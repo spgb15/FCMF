@@ -1,4 +1,5 @@
 ﻿using CapaPresentacion.ViewsAdministrador;
+using CapaPresentacion.ViewsEstudiante;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -54,6 +55,18 @@ namespace CapaPresentacion.ViewsGestor
         {
             FormComentariosGestor formComentariosGestor = new FormComentariosGestor();
             formComentariosGestor.Show();
+        }
+
+        private void btnIgresarVF_Click(object sender, EventArgs e)
+        {
+            FormGanadoraFotogenia formGanadoraFotogenia = new FormGanadoraFotogenia();
+            formGanadoraFotogenia.Show();
+        }
+
+        private void btnIngresarVR_Click(object sender, EventArgs e)
+        {
+            FormGanadoraReina formGanadoraReina = new FormGanadoraReina();
+            formGanadoraReina.Show();
         }
     }
 }

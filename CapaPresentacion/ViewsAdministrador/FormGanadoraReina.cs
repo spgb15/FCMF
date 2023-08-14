@@ -40,7 +40,7 @@ namespace CapaPresentacion.ViewsEstudiante
                                 string nombreGanadoraReina = reader["nombre"].ToString();
                                 string rutaFotoGanadoraReina = reader["ruta_foto"].ToString();
 
-                                labelReina.Text = nombreGanadoraReina;
+                                label2.Text = nombreGanadoraReina;
                                 pictureBoxReina.Image = Image.FromFile(rutaFotoGanadoraReina);
                             }
                         }

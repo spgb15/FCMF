@@ -53,3 +53,14 @@ C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaNegocios\obj\Debug\CapaNegocios
 C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaNegocios\obj\Debug\CapaNegocios.csproj.CopyComplete
 C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaNegocios\obj\Debug\CapaNegocios.dll
 C:\Users\Paul Guerra\Documents\Proyecto\FCMF\CapaNegocios\obj\Debug\CapaNegocios.pdb
+C:\Users\Mateo\OneDrive\Documentos\GitHub\FCMF\CapaNegocios\bin\Debug\CapaNegocios.dll
+C:\Users\Mateo\OneDrive\Documentos\GitHub\FCMF\CapaNegocios\bin\Debug\CapaNegocios.pdb
+C:\Users\Mateo\OneDrive\Documentos\GitHub\FCMF\CapaNegocios\bin\Debug\CapaDatos.dll
+C:\Users\Mateo\OneDrive\Documentos\GitHub\FCMF\CapaNegocios\bin\Debug\CapaEntidades.dll
+C:\Users\Mateo\OneDrive\Documentos\GitHub\FCMF\CapaNegocios\bin\Debug\CapaDatos.pdb
+C:\Users\Mateo\OneDrive\Documentos\GitHub\FCMF\CapaNegocios\bin\Debug\CapaEntidades.pdb
+C:\Users\Mateo\OneDrive\Documentos\GitHub\FCMF\CapaNegocios\obj\Debug\CapaNegocios.csproj.AssemblyReference.cache
+C:\Users\Mateo\OneDrive\Documentos\GitHub\FCMF\CapaNegocios\obj\Debug\CapaNegocios.csproj.CoreCompileInputs.cache
+C:\Users\Mateo\OneDrive\Documentos\GitHub\FCMF\CapaNegocios\obj\Debug\CapaNegocios.csproj.CopyComplete
+C:\Users\Mateo\OneDrive\Documentos\GitHub\FCMF\CapaNegocios\obj\Debug\CapaNegocios.dll
+C:\Users\Mateo\OneDrive\Documentos\GitHub\FCMF\CapaNegocios\obj\Debug\CapaNegocios.pdb

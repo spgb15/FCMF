@@ -1,4 +1,6 @@
 ﻿using CapaDatos;
+using CapaEntidades;
+using CapaNegocios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,11 +17,16 @@ namespace CapaPresentacion.ViewsAdministrador
     public partial class FormGanadoraFotogenia : Form
     {
         private CD_connection conn = new CD_connection();
+        private List<string> imagenPaths;
+        private int currentIndex = 0;
+        private int parametro;
+
+        private CN_GetData datos = new CN_GetData();
         public FormGanadoraFotogenia()
         {
             InitializeComponent();
         }
-
+        
         private void MostrarResultadoFotogenia()
         {
             try
@@ -52,6 +59,38 @@ namespace CapaPresentacion.ViewsAdministrador
             finally
             {
                 conn.CerrarConexion();
+            }
+        }
+
+        private void FormGanadoraFotogenia_Load(object sender, EventArgs e)
+        {
+            this.label1.Parent = this.pictureBox1;
+            this.label1.BackColor = Color.Transparent;
+
+            imagenPaths = datos.ObtenerImagen(parametro);
+
+            if (imagenPaths.Count > 0)
+            {
+                LoadImageByIndex(currentIndex);
+
+
+
+
+            }
+            else
+            {
+                System.Windows.MessageBox.Show("No se encontraron imagenes en la carpeta");
+            }
+        }
+        private void LoadImageByIndex(int index)
+        {
+            List<Candidata> candidatas = datos.ObtenerCandidata(parametro);
+
+            if (index >= 0 && index < imagenPaths.Count)
+            {
+                pictureBoxFotogenia.Image = Image.FromFile(imagenPaths[index]);
+                txtNombreFotogenia.Text = candidatas[index].Nombre;
+
             }
         }
     }
