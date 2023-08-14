@@ -10,5 +10,7 @@ namespace CapaEntidades
     {
         public static int IdEstudiante { get; set; }
 
+        public static int votacion { get; set; }
+
     }
 }
