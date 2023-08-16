@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Security.AccessControl;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,7 @@ namespace CapaPresentacion.ViewsGestor
     public partial class FormDatosPersonalesGestor : Form
     {
         private CN_GetData ObjectCN = new CN_GetData();
+        private string urls;
         Boolean isInsert = true;
         int id_datosPersonales = 0;
 
@@ -101,6 +103,23 @@ namespace CapaPresentacion.ViewsGestor
         private void FormDatosPersonalesGestor_Load(object sender, EventArgs e)
         {
             CargarDatosPersonales();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "imagenes|*.jpg; *.jpeg; *.png";
+            openFile.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            openFile.Title = "Seleccione una ruta ";
+
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                urls = openFile.FileName;
+                if (!string.IsNullOrEmpty(urls))
+                {
+                    txtUrl.Text = urls;
+                }
+            }
         }
     }
 }

@@ -66,11 +66,6 @@ namespace CapaPresentacion.ViewsAdministrador
             formFotoAdmin.Show();
         }
 
-        private void btnIngresarCO_Click(object sender, EventArgs e)
-        {
-            FormComentariosAdmin formComentariosAdmin = new FormComentariosAdmin();
-            formComentariosAdmin.Show();
-        }
 
         private void btnIgresarVF_Click(object sender, EventArgs e)
         {

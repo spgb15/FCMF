@@ -1,4 +1,5 @@
 ﻿using CapaDatos;
+using CapaEntidades;
 using CapaNegocios;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace CapaPresentacion.ViewsAdministrador
     public partial class FormCandidataAdmin : Form
     {
         private CN_GetData ObjectCN = new CN_GetData();
+        List<setCombos> lista = new List<setCombos>();
         Boolean isInsert = true;
         int id_candidata = 0;
 
@@ -50,20 +52,31 @@ namespace CapaPresentacion.ViewsAdministrador
 
         private void GetComboIdReinado()
         {
-
+            
+            //cmb_ID_RE.DisplayMember = "nombreReinado";
+            // cmb_ID_RE.ValueMember = "id_reinado";
+            //cmb_ID_RE.DataSource = ObjectCN.GetReinado();
             foreach (DataRow row in ObjectCN.GetReinado().Rows)
             {
-                string columna1 = row["id_reinado"].ToString();
-                string columna2 = row["nombreReinado"].ToString();
-                cmb_ID_RE.Items.Add(columna1);
-                cmb_ID_RE.Items.Add(columna2);
+                setCombos combo = new setCombos
+                {
+                    id_reinado = Convert.ToInt32(row["id_reinado"].ToString()),
+                    reinado = row["nombreReinado"].ToString()
+                };
+                lista.Add(combo);
+
+
+
                 //Console.WriteLine($"Columna1: {columna1}, Columna2: {columna2}");
             }
-
+            cmb_ID_RE.DisplayMember = "reinado";
+            cmb_ID_RE.ValueMember = "id_reinado";
+            cmb_ID_RE.DataSource = lista;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+
             try
             {
                 if (isInsert == true)

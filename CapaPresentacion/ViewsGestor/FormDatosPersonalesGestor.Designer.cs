@@ -51,6 +51,8 @@
             this.txtDir = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.openFile = new System.Windows.Forms.OpenFileDialog();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosPersonales)).BeginInit();
             this.SuspendLayout();
             // 
@@ -251,11 +253,26 @@
             this.label1.TabIndex = 31;
             this.label1.Text = "Nombre";
             // 
+            // openFile
+            // 
+            this.openFile.FileName = "openFileDialog1";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(242, 280);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 54;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormDatosPersonalesGestor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(801, 492);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbEst);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.dgvDatosPersonales);
@@ -313,5 +330,7 @@
         private System.Windows.Forms.TextBox txtDir;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.OpenFileDialog openFile;
+        private System.Windows.Forms.Button button1;
     }
 }

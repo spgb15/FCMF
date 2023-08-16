@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,7 @@ namespace CapaPresentacion.ViewsAdministrador
     public partial class FormFotoAdmin : Form
     {
         private CN_GetData ObjectCN = new CN_GetData();
+        private string urls;
         Boolean isInsert = true;
         int id_foto = 0;
 
@@ -126,6 +128,28 @@ namespace CapaPresentacion.ViewsAdministrador
             {
                 MessageBox.Show("Debe seleccionar la fila");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "imagenes|*.jpg; *.jpeg; *.png";
+            openFile.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            openFile.Title = "Seleccione una ruta ";
+
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                urls = openFile.FileName;
+                if (!string.IsNullOrEmpty(urls))
+                {
+                    txtUrlF.Text = urls;
+                }
+            }
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }

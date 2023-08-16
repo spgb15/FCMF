@@ -76,12 +76,6 @@
     <Compile Include="ViewsAdministrador\FormCandidataAdmin.Designer.cs">
       <DependentUpon>FormCandidataAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewsAdministrador\FormComentariosAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewsAdministrador\FormComentariosAdmin.Designer.cs">
-      <DependentUpon>FormComentariosAdmin.cs</DependentUpon>
-    </Compile>
     <Compile Include="ViewsAdministrador\FormDatosPersonalesAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,12 +148,6 @@
     <Compile Include="ViewsGestor\FormCandidataGestor.Designer.cs">
       <DependentUpon>FormCandidataGestor.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewsGestor\FormComentariosGestor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewsGestor\FormComentariosGestor.Designer.cs">
-      <DependentUpon>FormComentariosGestor.cs</DependentUpon>
-    </Compile>
     <Compile Include="ViewsGestor\FormDatosPersonalesGestor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,9 +179,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewsAdministrador\FormCandidataAdmin.resx">
       <DependentUpon>FormCandidataAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewsAdministrador\FormComentariosAdmin.resx">
-      <DependentUpon>FormComentariosAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewsAdministrador\FormDatosPersonalesAdmin.resx">
       <DependentUpon>FormDatosPersonalesAdmin.cs</DependentUpon>
@@ -230,9 +215,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewsGestor\FormCandidataGestor.resx">
       <DependentUpon>FormCandidataGestor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewsGestor\FormComentariosGestor.resx">
-      <DependentUpon>FormComentariosGestor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewsGestor\FormDatosPersonalesGestor.resx">
       <DependentUpon>FormDatosPersonalesGestor.cs</DependentUpon>

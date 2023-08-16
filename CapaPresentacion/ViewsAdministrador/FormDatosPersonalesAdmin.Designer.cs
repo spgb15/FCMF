@@ -56,6 +56,8 @@ namespace CapaPresentacion.ViewsAdministrador
             this.txtTel = new System.Windows.Forms.TextBox();
             this.txtDir = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.openFile = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosPersonales)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +73,7 @@ namespace CapaPresentacion.ViewsAdministrador
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.cmbEst);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.dgvDatosPersonales);
@@ -287,6 +290,20 @@ namespace CapaPresentacion.ViewsAdministrador
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(245, 280);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 23);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // openFile
+            // 
+            this.openFile.FileName = "openFileDialog1";
+            // 
             // FormDatosPersonalesAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -332,5 +349,7 @@ namespace CapaPresentacion.ViewsAdministrador
         private System.Windows.Forms.DataGridView dgvDatosPersonales;
         private ComboBox cmbEst;
         private Label label10;
+        private Button button1;
+        private OpenFileDialog openFile;
     }
 }

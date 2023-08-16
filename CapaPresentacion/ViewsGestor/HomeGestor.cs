@@ -51,11 +51,6 @@ namespace CapaPresentacion.ViewsGestor
             formAlbumGestor.Show();
         }
 
-        private void btnIngresarCO_Click(object sender, EventArgs e)
-        {
-            FormComentariosGestor formComentariosGestor = new FormComentariosGestor();
-            formComentariosGestor.Show();
-        }
 
         private void btnIgresarVF_Click(object sender, EventArgs e)
         {

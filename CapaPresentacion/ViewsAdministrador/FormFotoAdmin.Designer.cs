@@ -35,7 +35,6 @@
             this.dtpFechaRe = new System.Windows.Forms.DateTimePicker();
             this.txtTitu = new System.Windows.Forms.TextBox();
             this.txtDesc = new System.Windows.Forms.TextBox();
-            this.txtUrlF = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,6 +46,9 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.openFile = new System.Windows.Forms.OpenFileDialog();
+            this.txtUrlF = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFoto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,13 +104,6 @@
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(100, 20);
             this.txtDesc.TabIndex = 6;
-            // 
-            // txtUrlF
-            // 
-            this.txtUrlF.Location = new System.Drawing.Point(198, 194);
-            this.txtUrlF.Name = "txtUrlF";
-            this.txtUrlF.Size = new System.Drawing.Size(100, 20);
-            this.txtUrlF.TabIndex = 7;
             // 
             // label1
             // 
@@ -213,11 +208,34 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(304, 192);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // openFile
+            // 
+            this.openFile.FileName = "openFileDialog1";
+            this.openFile.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            // 
+            // txtUrlF
+            // 
+            this.txtUrlF.Location = new System.Drawing.Point(198, 194);
+            this.txtUrlF.Name = "txtUrlF";
+            this.txtUrlF.Size = new System.Drawing.Size(100, 20);
+            this.txtUrlF.TabIndex = 7;
+            // 
             // FormFotoAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 361);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnGuardar);
@@ -255,7 +273,6 @@
         private System.Windows.Forms.DateTimePicker dtpFechaRe;
         private System.Windows.Forms.TextBox txtTitu;
         private System.Windows.Forms.TextBox txtDesc;
-        private System.Windows.Forms.TextBox txtUrlF;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -267,5 +284,8 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.OpenFileDialog openFile;
+        private System.Windows.Forms.TextBox txtUrlF;
     }
 }
